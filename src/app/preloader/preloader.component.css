@@ -1,0 +1,82 @@
+
+.preloader{
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    transform: translateX(-110%);
+    z-index: 1100;
+    /* overflow-x: hidden; */
+  
+}
+
+
+
+.image-preload{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 200%;
+    z-index: 10000;
+}
+
+
+
+.titulo-entrada{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.seccion_1{
+    overflow: hidden;
+}
+
+.nombre-p{
+    color: aliceblue;
+    font-size: 200px;
+    line-height: .9;
+    text-align: end;
+}
+
+
+.seccion_2{
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+}
+
+.apellido_p{
+    color: rgb(255, 255, 255);
+    font-size: 200px;
+    padding: 0;
+    line-height: .8;
+}
+
+
+
+.texto_pequeno{
+    width: 170px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.profesion_p{
+    overflow: hidden;
+}
+
+
+.portafolio_p{
+    text-align: end;
+    overflow: hidden;
+}
+
+.div_texto{
+    overflow: hidden;
+}

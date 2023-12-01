@@ -1,0 +1,45 @@
+<div class="contenedor_home">
+    <div class="titulo_contenedor">
+        <div class="textos">
+            <div  class="seccion_1">
+                <p #p1 class="p1">MAIKOL</p>
+                <div #segundo_cuadro_texto class="segundo_cuadro_texto">
+                    <div #p2_div class="p2_div">
+                        <p class="p2" #p2>{{texto2}}</p>
+                    </div>
+                    <p #p3 class="p3">{{texto1}}</p>
+                </div>
+            </div>
+            <div class="seccion_2">
+                <p #apellido_texto class="apellido_p">GARRIDO</p>
+                <div class="texto_pequeno">
+                    <div class="div_texto"><p #profesion_texto class="profesion_p">DESARROLLADOR WED <br>FULL STACK</p></div>
+                    <div class="div_texto"><p #portafolio_texto class="portafolio_p">PORTAFOLIO</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  
+  
+    <div class="slider-container" (mouseover)="onMouseOver($event)" >
+        <div class="splide splide1" (mouseout)="onMouseOut($event)">
+          <div class="splide__track" >
+            <ul class="splide__list">
+              <li  class="splide__slide" *ngFor="let slide of slides; let i = index" >
+                <div class="img-div">
+                    <a (click)="redirectToSlide()" style="cursor: pointer">
+                      <img class="img"[src]="slide.archivo" alt="Slide" [id]="slide.id" >
+                    </a>
+                </div>
+                <div class="descripcion" #descripcion>
+                  <!-- <p class="texto1">{{ slide.texto1 }}</p>
+                  <p class="texto2">{{ slide.texto2 }}</p> -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
