@@ -1,0 +1,130 @@
+{
+    "skills": [
+      {
+        "titulo": "FRONTEND",
+        "img": [
+          {
+            "url": "../../assets/html.png",
+            "porcentaje": "90%",
+            "background": ["#eb8b5e"]
+          },
+          {
+            "url": "../../assets/css.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          },
+          {
+            "url": "../../assets/js.png",
+            "porcentaje": "80%",
+            "background": ["#ffd200"]
+          },
+          {
+            "url": "../../assets/bootstrap.png",
+            "porcentaje": "40%",
+            "background": ["#ffc6e8"]
+          },
+          {
+            "url": "../../assets/jquery.png",
+            "porcentaje": "70%",
+            "background": ["#1e2e3b"]
+          }
+        ]
+      },
+      {
+        "titulo": "BACKEND",
+        "img": [
+          {
+            "url": "../../assets/php.png",
+            "porcentaje": "70%",
+            "background": ["#4d4e88"]
+          },
+          {
+            "url": "../../assets/python.png",
+            "porcentaje": "80%",
+            "background": ["#4da7f1"]
+          },
+          {
+            "url": "../../assets/node.png",
+            "porcentaje": "80%",
+            "background": ["#97c792"]
+          }
+        ]
+      },
+      {
+        "titulo": "DATABASE",
+        "img": [
+          {
+            "url": "../../assets/mysql.png",
+            "porcentaje": "70%",
+            "background": ["#eb8b5e"]
+          },
+          {
+            "url": "../../assets/Mongo.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          }
+        ]
+      },
+      {
+        "titulo": "FRAMEWORKS",
+        "img": [
+          {
+            "url": "../../assets/laravel.png",
+            "porcentaje": "70%",
+            "background": ["#eb8b5e"]
+          },
+          {
+            "url": "../../assets/angular.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          },
+          {
+            "url": "../../assets/react.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          },
+          {
+            "url": "../../assets/flask.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          }
+        ]
+      },
+      {
+        "titulo": "OTROS",
+        "img": [
+          {
+            "url": "../../assets/jupyter.png",
+            "porcentaje": "70%",
+            "background": ["#eb8b5e"]
+          },
+          {
+            "url": "../../assets/streamlit.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          },
+          {
+            "url": "../../assets/pandas.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          },
+          {
+            "url": "../../assets/numpy.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          },
+          {
+            "url": "../../assets/kafka.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          },
+          {
+            "url": "../../assets/scikit.png",
+            "porcentaje": "80%",
+            "background": ["#bfcdff"]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+    font-family: 'M PLUS 1p', sans-serif;
+    list-style: none;
+}
+
+:root{
+    --color-titulo:rgba(255, 255, 255, 0.907);
+    --color-subtitulo:rgba(189, 189, 189, 0.352);
+    --fonsize-subtitulo:20px;
+    --background-body: #121212;
+    --border-color:rgb(62, 62, 62);
+    --color-tema:rgb(26, 212, 212);
+
+}
+
+body{
+
+    background-color: var(--background-body);
+    scroll-behavior: smooth;
+}
+.contenedor_princpal{
+    width: 100%;
+    background-color: black;
+}
+
+
+  

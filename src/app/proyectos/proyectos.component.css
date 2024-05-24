@@ -1,0 +1,84 @@
+.contenedor_proyectos{
+    padding: 20px;
+    background-color: var(--background-body
+);
+}
+
+.camara_central{
+    border: 2px solid greenyellow;
+}
+
+
+.lista_proyectos a {
+
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+.lista_proyectos a h1, p {
+    color: white;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.lista_proyectos a h1{
+    font-size: 100px;
+    opacity: .5;
+    font-weight: 500;
+    text-align: end;
+}
+
+
+
+
+.div_subtitulo{
+    margin-top: 15px;
+    position: absolute;
+    opacity: 1;
+    overflow: hidden;
+}
+.lista_proyectos a p{
+    font-size: 20px;
+    transform: translateY(100%);
+    opacity: 0;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+
+    .contenedor_proyectos{
+        margin-top: 60px;
+    }
+
+    .lista_proyectos a h1{
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.779);
+        font-size: 2rem;
+        padding: 10px 0px;
+    
+    }
+
+    
+}

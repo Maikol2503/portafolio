@@ -1,0 +1,479 @@
+.contenedor_home{
+    background-color: var(--background-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+
+.titulo-pantalla-telefono{
+    display: none;
+}
+
+.titulo-proyectos{
+    display: none;
+}
+
+.pr{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+
+.titulo_contenedor{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 35%;
+    padding: 0px 15px 0 0 ;
+}
+
+.textos{
+    width: 100%;
+    
+}
+
+
+
+.seccion_1{
+    width: auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.seccion_1 .p1{
+    position: relative;
+    line-height: .9;
+    font-size: 140px;
+}
+
+
+
+.texto1, texto2{
+    color: aliceblue;
+}
+
+
+
+
+
+.segundo_cuadro_texto{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    width: auto;
+    height: 100%;
+    bottom: 0%;
+}
+
+.p2_div{
+    overflow: hidden;
+  
+}
+
+
+.seccion_1 .p2{
+    overflow: hidden;
+    position: relative;
+    font-size: 30px;
+    bottom: 0;
+    line-height: 1.1;
+    transform: translateY(100%);
+    
+}
+
+
+.seccion_1 .p3{
+    font-size: 110px;
+    line-height:.8;
+    position: relative;
+    bottom: -100%;
+}
+
+
+
+.seccion_2{
+    display: flex;
+    overflow: hidden;
+    justify-content: end;
+}
+
+.apellido_p{
+    font-size: 140px;
+    line-height: .9;
+}
+
+.div_texto{
+    overflow: hidden;
+}
+
+
+.texto_pequeno{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 400;
+}
+
+.portafolio_p{
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 60%;
+    padding-bottom: 10px;
+}
+
+.slider-container{
+    height: auto;
+    display: flex;
+    align-items: center;
+    cursor:grab;
+    width: 100%;
+    
+}
+
+.splide{
+    height: auto;
+    
+}
+
+
+.splide__track{
+    height: auto;
+}
+
+
+.splide__list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+}
+
+.splide__slide {
+    opacity: 1;
+    max-height: 100%;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+    line-height: normal;
+    /* border: 1px solid red; */
+    
+}
+
+.splide__slide .img{
+    object-fit: cover;
+    object-position: center;
+    min-width: 25vw;
+    max-width: 25vw;
+    max-height: auto;
+    transition: all .2s;
+    cursor: pointer;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .titulo_contenedor{
+        font-size: 30px;
+        /* Otros estilos para pantallas pequeñas */
+    }
+
+    .textos{
+        width: 100%;
+        
+    }
+    
+    
+    
+    .seccion_1 .p1{
+        /* position: relative;
+        line-height: .9; */
+        font-size: 90px;
+    }
+    
+    
+    
+    .texto1, texto2{
+        color: aliceblue;
+    }
+
+    
+
+.seccion_1 .p2{
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    bottom: 0;
+    line-height: 1.1;
+    transform: translateY(100%);
+    
+}
+
+
+.seccion_1 .p3{
+    font-size: 90px;
+    line-height:.8;
+    position: relative;
+    bottom: -100%;
+}
+
+
+
+
+.apellido_p{
+    font-size: 90px;
+    line-height: .9;
+}
+
+
+
+
+.texto_pequeno{
+    font-size: 12px;
+}
+    /* Otros estilos específicos para pantallas pequeñas */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    
+    .contenedor_home{
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .titulo-proyectos{
+        display: block;
+        font-size: 18px;
+        color: rgba(250, 250, 250, 0.392);
+        padding-right: 20px;
+        margin-top: 70px;
+        text-align: right;
+    }
+
+    .titulo_contenedor{
+        display:  none;
+    }
+
+    .titulo-pantalla-telefono{
+        color: white;
+        width: 100%;
+        padding-right: 20px;
+        margin-top: 50px;
+        display: block;
+        text-align: end;
+        
+    }
+
+    .titulo-pantalla-telefono .nombre{
+        font-size: 16vw;
+        line-height: 1;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.895);
+    }
+
+    .titulo-pantalla-telefono .apellido{
+        font-size: 16vw;
+        line-height: 1;
+       font-weight: 500;
+       color: aliceblue;
+    }
+
+
+    .titulo-pantalla-telefono .pie-titulo{
+       font-size: 2.3vw;
+       margin-top: 5px;
+       color: rgba(255, 255, 255, 0.741);
+       font-weight: 500;
+       letter-spacing: 1px;
+    }
+
+    .btn-cv{
+        width: 40%;
+        height: 35px;
+        margin-top: 15px;
+        background-color: rgb(0, 118, 197);
+        border: none;
+        padding: 0 5px;
+        font-weight: 500;
+    }
+
+
+    .textos{
+        width: 100%;
+        
+    }
+    
+    
+    
+    .seccion_1 .p1{
+        /* position: relative;
+        line-height: .9; */
+        font-size: 50px;
+    }
+    
+    
+    
+    .texto1, texto2{
+        color: aliceblue;
+    }
+
+
+
+    
+
+.seccion_1 .p2{
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    bottom: 0;
+    line-height: 1.1;
+    transform: translateY(100%);
+    
+}
+
+
+.seccion_1 .p3{
+    font-size: 50px;
+    line-height:.8;
+    position: relative;
+    bottom: -100%;
+}
+
+
+
+
+.apellido_p{
+    font-size: 50px;
+    line-height: .9;
+}
+
+
+
+
+.texto_pequeno{
+    font-size: 10px;
+}
+
+.slider{
+ 
+}
+
+.slider-container{
+    height: auto;
+    padding-top: 20px;
+ 
+}
+
+
+.splide__list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+   
+}
+
+.splide__slide{
+    display: flex;
+    height: 100%;
+    
+}
+
+.splide__slide .img{
+    max-width: 75vw;
+}
+
+.img-div{
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

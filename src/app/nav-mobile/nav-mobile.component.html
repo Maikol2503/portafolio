@@ -1,0 +1,10 @@
+<div class="nav">
+    <!-- <img class="logo" routerLink="/home" src="../../assets/logo.png" alt="" > -->
+    <a href=""><p class="logo-letra"  [ngClass]="{'ruta_activa': rutaActiva === '/'}">M</p></a>
+    <ul class="list-projects">
+        <li class="item-project" routerLink="/about" [ngClass]="{'ruta_activa': rutaActiva === '/about'}">Abuot</li>
+        <li class="item-project" routerLink="/proyectos" [ngClass]="{'ruta_activa': rutaActiva === '/proyectos'}">Projects</li>
+        <li class="item-project" routerLink="/contacto" [ngClass]="{'ruta_activa': rutaActiva === '/contacto'}">Contac</li>
+    </ul>
+    <!-- <img src="../../assets/menu.png" alt=""> -->
+</div>

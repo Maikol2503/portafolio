@@ -1,0 +1,43 @@
+.nav{
+    background-color: rgba(255, 255, 255, 0);
+    height: 60px;
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+.logo{
+    width: 25px;
+}
+
+.logo-letra{
+    font-size: 27px;
+    font-family: "Varela Round", sans-serif;
+    color: white;
+}
+
+.list-projects{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.list-projects .item-project{
+    color: rgba(255, 255, 255, 0.723);
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.ruta_activa{
+    font-weight: bold;
+    color: rgb(0, 216, 209) !important; 
+}

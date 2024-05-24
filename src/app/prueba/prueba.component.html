@@ -1,0 +1,83 @@
+
+
+<div  class="scrollable-container">
+    <div class="cuadro_padre">
+        <div class="cuadro_hijo">
+            <header class="header">
+                <div class="container_header">
+                    <div class="texto_nombre">
+                        <div><p>MAIKOL</p></div>
+                        <div><p>GARRIDO</p></div>
+                    </div>
+                    <div class="texto_profesion">
+                        <div><p>DESAROLLADOR WED</p></div>
+                        <div><p>FULL STACK</p></div>
+                    </div>
+                    <div class="texto_sobre_mi">
+                        
+                        <p> ¡Hola! Soy Maikol Garrido, un joven apasionado por las nuevas tecnologías
+                             y dedicado a explorar las infinitas posibilidades que ofrecen. Mi enfoque
+                             se centra en la entrega constante de resultados de alta calidad,
+                             ya que creo firmemente en la importancia de la excelencia en cada 
+                             proyecto en el que me embarco. 
+                             
+                             <br>
+
+                             Mi compromiso con la calidad se refleja en cada línea de código que escribo
+                             y en cada proyecto que abordo. Me esfuerzo por mantenerme actualizado en las 
+                             últimas tendencias y desarrollos tecnológicos,
+                             asegurándome de que cada solución que propongo esté respaldada por lo 
+                             último en conocimientos y enfoques innovadores.
+                        </p>
+                        <a href="../../cv/CVMaikolGarrido.pdf" download="CVMaikolGarrido.pdf">
+                            <button class="btn-descargar-cv">Descargar CV</button>
+                        </a>
+                    </div>
+                    <!-- <img  class="img_header" src="../../assets/me8.png" alt=""> -->
+                    <img  class="img_header" src="https://i.imgur.com/NidmfYA.png" alt="">
+                </div>
+            </header>
+            <section class="skills">
+                <div class="skills_container">
+                    <h1>SKILLS</h1>
+                    <div class="skill" *ngFor="let skill of skills_data">
+                        <p class="titulo">{{skill.titulo}}</p>
+                        <div class="barra" *ngFor="let imagen of skill.img">
+                            <div class="container_barra" [style]="{ 'height': imagen.porcentage }">
+                                <div class="container_img_barra" [style]="{'background-color':imagen.background, 'border': '1px solid ' + imagen.background}">
+                                    <p class="porcentage">{{imagen.porcentage}}</p>
+                                    <img class="img_skill" [src]="imagen.url" alt="{{ imagen }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="cuadro_hijo2">
+                <img class="img_header_hijo2" src="https://i.imgur.com/xA7DGpn.png" alt="">
+                <div class="subhijo_cuadro_hijo2">
+                    <h1>EXPERIENCIA</h1>
+                    <ul class="experiencias">
+                        <li class="experiencia"><a target="_blank" href="https://www.google.com/maps/place/Hosteria+Caba%C3%B1as+Del+Pescador+Cajas/@-2.8047145,-79.1575374,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMz_Aqr5IRbxbIU11EvkhJ7TFtRufEdxs6SGbUI!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMz_Aqr5IRbxbIU11EvkhJ7TFtRufEdxs6SGbUI%3Dw203-h152-k-no!7i5120!8i3840!4m14!1m2!2m1!1shosteria+caba%C3%B1as+del+pescador!3m10!1s0x91cd3980567f4ab1:0xb5fc3b7d85368c2!5m2!4m1!1i2!8m2!3d-2.8047145!4d-79.1575374!10e5!15sCh5ob3N0ZXJpYSBjYWJhw7FhcyBkZWwgcGVzY2Fkb3KSAQZob3N0ZWzgAQA!16s%2Fg%2F11f164v0j1?entry=ttu">Hosteleria Cabañas del pescador</a></li>
+                        <li class="experiencia"><a target="_blank" href="#">Embutidos la Hoguera</a></li>
+                        <li class="experiencia"><a target="_blank" href="https://www.google.com/maps/place/pic%26nic+-+American+Sandwich+Bar/@40.4229783,-3.859224,12z/data=!4m10!1m2!2m1!1spic+and+nic!3m6!1s0xd42295b136e270b:0x3a9f01c65c1ec74e!8m2!3d40.4229783!4d-3.7067887!15sCgtwaWMgYW5kIG5pYyIDiAEBWg0iC3BpYyBhbmQgbmljkgEKcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSemIzUmlhRk5SRUFF4AEA!16s%2Fg%2F11ghp23mqy?entry=ttu">pic&nic - AMERICAN SANDWICH BAR</a></li>
+                    </ul>
+                    <div class="texto_info">
+                        <p> 
+                            "Mi experiencia laboral se ha desarrollado en áreas 
+                            diversas a la tecnología, sin embargo, he adquirido 
+                            habilidades que son aplicables en cualquier campo laboral.
+                            Destaco mi capacidad para trabajar en equipo, gestionar 
+                            proyectos, y mantener una comunicación efectiva tanto con
+                            colegas de equipo como con clientes. Estas habilidades son
+                            transferibles y valiosas en cualquier entorno laboral."
+                        </p>
+                        
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+    </div>
+    </div>
