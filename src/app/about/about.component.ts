@@ -209,7 +209,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       const img_header_hijo2 = gsap.to(".img_header_hijo2", { duration:5, top:"-100%"});
       const subhijo_cuadro_hijo2 = gsap.to(".subhijo_cuadro_hijo2", { duration:6, y:"0%"});
       const c3 = [subhijo_cuadro_hijo2, img_header_hijo2, ]
-      const skill_container_todo_izquireda =  gsap.to(".skills_container", { x: -scrollingBarras, duration:5, delay:1});
+      const skill_container_todo_izquireda =  gsap.to(".skills_container", { x: -scrollingBarras, duration:5, delay:.4});
       const subhijo_cuadro_hijo2_subir = gsap.to(".subhijo_cuadro_hijo2", { duration:6, y:"-30%"});
 
       // INTERNTTAR QUE LA ANIMACION DE LAS BARRAS HAVIA LA IZQUIERDA NO ALLA UN CORTE CON LA ANIMACION DE LA IMAGEN SIGUIENTE
