@@ -265,13 +265,13 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       const header_img = gsap.to(".img_header", {height:'70vh',left:'-120px',  x: "0%", y:"-30%", duration: 1 , scale:1, ease:"power1.out"});
       const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1, duration: 1});
 
-      const header = gsap.to(".header", {y:"-100%", duration: 2 ,  ease:"power1.in"});
-      const skills_container_move_top = gsap.to(".skills", { y: "-60%", duration: 5});
-      const cuadro_hijo2 = gsap.to(".cuadro_hijo2", { duration: 10, right: "0%" });
-      const skills_container_move_left = gsap.to(".skills", { x: "-100%", duration:15, opacity:0});
+      const header = gsap.to(".header", {y:"-100%", duration: 1 ,  ease:"power1.in"});
+      const skills_container_move_top = gsap.to(".skills", { y: "-60%", duration: 2.2});
+      const cuadro_hijo2 = gsap.to(".cuadro_hijo2", { duration: 2, right: "0%" });
+      const skills_container_move_left = gsap.to(".skills", { x: "-100%", duration:5, opacity:0});
       const b3 = [skills_container_move_left , cuadro_hijo2]
-      const img_header_hijo2 = gsap.to(".img_header_hijo2", { duration:2, top:"-100%"});
-      const subhijo_cuadro_hijo2 = gsap.to(".subhijo_cuadro_hijo2", { duration:3, y:"0%"});
+      const img_header_hijo2 = gsap.to(".img_header_hijo2", { duration:1, top:"-100%", ease:"power1.in" });
+      const subhijo_cuadro_hijo2 = gsap.to(".subhijo_cuadro_hijo2", { duration:1, y:"0%"});
       const c3 = [subhijo_cuadro_hijo2, img_header_hijo2, ]
 
       // INTERNTTAR QUE LA ANIMACION DE LAS BARRAS HAVIA LA IZQUIERDA NO ALLA UN CORTE CON LA ANIMACION DE LA IMAGEN SIGUIENTE
@@ -284,7 +284,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.tl.add(header_div_nombre, 2)
       this.tl.add(header_div_profesion, 2)
       this.tl.add(header, 4) //header sube
-      this.tl.add(skills_container_move_top, 5.5) // sube skills
+      this.tl.add(skills_container_move_top, 4.7) // sube skills
       this.tl.add(b3, ">"); // skills mueve a la izquierda y cuadro_hijo2 mueve a la izquierda
       this.tl.add(c3, ">");
       
