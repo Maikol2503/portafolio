@@ -270,8 +270,8 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       const cuadro_hijo2 = gsap.to(".cuadro_hijo2", { duration: 10, right: "0%" });
       const skills_container_move_left = gsap.to(".skills", { x: "-100%", duration:15, opacity:0});
       const b3 = [skills_container_move_left , cuadro_hijo2]
-      const img_header_hijo2 = gsap.to(".img_header_hijo2", { duration:3, top:"-100%"});
-      const subhijo_cuadro_hijo2 = gsap.to(".subhijo_cuadro_hijo2", { duration:6, y:"0%"});
+      const img_header_hijo2 = gsap.to(".img_header_hijo2", { duration:2, top:"-100%"});
+      const subhijo_cuadro_hijo2 = gsap.to(".subhijo_cuadro_hijo2", { duration:3, y:"0%"});
       const c3 = [subhijo_cuadro_hijo2, img_header_hijo2, ]
 
       // INTERNTTAR QUE LA ANIMACION DE LAS BARRAS HAVIA LA IZQUIERDA NO ALLA UN CORTE CON LA ANIMACION DE LA IMAGEN SIGUIENTE
