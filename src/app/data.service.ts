@@ -7,177 +7,177 @@ export class DataService {
 
   constructor() { }
 
-  data_skills() {
-    let skills = [
-      {
-        titulo: "FRONTEND",
-        img: [
-          {
-            url: "https://i.imgur.com/9ostmpC.png",
-            porcentage: "90",
-            background: ["#eb8b5e"],
-            name: "HTML",
-            description: "Markup language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/uigtsvJ.png",
-            porcentage: "80",
-            background: ["#bfcdff"],
-            name: "CSS",
-            description: "Styling language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/JtLGXFz.png",
-            porcentage: "80",
-            background: ["#ffd200"],
-            name: "JS",
-            description: "Scripting language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/8l6yvWR.png",
-            porcentage: "40",
-            background: ["#ffc6e8"],
-            name: "Bootstrap",
-            description: "Frontend framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/QkHCBLF.png",
-            porcentage: "70",
-            background: ["#277eff"],
-            name: "jquery",
-            description: "JavaScript library. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          }
-        ]
-      },
-      {
-        titulo: "BACKEND",
-        img: [
-          {
-            url: "https://i.imgur.com/UigWEKL.png",
-            porcentage: "70",
-            background: ["#4d4e88"],
-            name: "php",
-            description: "Server-side scripting language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/UF8iznt.png",
-            porcentage: "80",
-            background: ["#4da7f1"],
-            name: "python",
-            description: "Server-side scripting language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/8Ps1rue.png",
-            porcentage: "60",
-            background: ["#97c792"],
-            name: "node",
-            description: "Runtime environment. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          }
-        ]
-      },
-      {
-        titulo: "DATABASE",
-        img: [
-          {
-            url: "https://i.imgur.com/hKwsTJO.png",
-            porcentage: "80",
-            background: ["#e7f2ff"],
-            name: "mysql",
-            description: "Relational database management system. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/rODMeIK.png",
-            porcentage: "80",
-            background: ["#c8ffd4"],
-            name: "mongo",
-            description: "NoSQL database program. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          }
-        ]
-      },
-      {
-        titulo: "FRAMEWORKS",
-        img: [
-          {
-            url: "https://i.imgur.com/oc09UDJ.png",
-            porcentage: "60",
-            background: ["#ffbfb5"],
-            name: "laravel",
-            description: "PHP framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/lN1Nz46.png",
-            porcentage: "80",
-            background: ["#ff888b"],
-            name: "angular",
-            description: "Frontend framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/Bev1pIh.png",
-            porcentage: "60",
-            background: ["#012a35"],
-            name: "react",
-            description: "JavaScript library for building user interfaces. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/TcK29dV.png",
-            porcentage: "80",
-            background: ["#aaaebb"],
-            name: "flask",
-            description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          }
-        ]
-      },
-      {
-        titulo: "OTROS",
-        img: [
-          {
-            url: "https://i.imgur.com/hgIDUXy.png",
-            porcentage: "90",
-            background: ["#ffffff"],
-            name: "jupyter",
-            description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/oXYhDTP.png",
-            porcentage: "80",
-            background: ["#ffafbd"],
-            name: "streamlit",
-            description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/yTOyd53.png",
-            porcentage: "60",
-            background: ["#bfcdff"],
-            name: "pandas",
-            description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/sNx0R94.png",
-            porcentage: "60",
-            background: ["#97def9"],
-            name: "numpy",
-            description: "Lorem ipsum"
-          },
-          {
-            url: "https://i.imgur.com/Opw3ZsY.png",
-            porcentage: "30",
-            background: ["#bfffd1"],
-            name: "kafka",
-            description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          },
-          {
-            url: "https://i.imgur.com/8O62lkG.png",
-            porcentage: "50",
-            background: ["#ffce9a"],
-            name: "scikits.learn",
-            description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
-          }
-        ]
-      }
-    ];
+  // data_skills() {
+  //   let skills = [
+  //     {
+  //       titulo: "FRONTEND",
+  //       img: [
+  //         {
+  //           url: "https://i.imgur.com/9ostmpC.png",
+  //           porcentage: "90",
+  //           background: ["#eb8b5e"],
+  //           name: "HTML",
+  //           description: "Markup language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/uigtsvJ.png",
+  //           porcentage: "80",
+  //           background: ["#bfcdff"],
+  //           name: "CSS",
+  //           description: "Styling language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/JtLGXFz.png",
+  //           porcentage: "80",
+  //           background: ["#ffd200"],
+  //           name: "JS",
+  //           description: "Scripting language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/8l6yvWR.png",
+  //           porcentage: "40",
+  //           background: ["#ffc6e8"],
+  //           name: "Bootstrap",
+  //           description: "Frontend framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/QkHCBLF.png",
+  //           porcentage: "70",
+  //           background: ["#277eff"],
+  //           name: "jquery",
+  //           description: "JavaScript library. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       titulo: "BACKEND",
+  //       img: [
+  //         {
+  //           url: "https://i.imgur.com/UigWEKL.png",
+  //           porcentage: "70",
+  //           background: ["#4d4e88"],
+  //           name: "php",
+  //           description: "Server-side scripting language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/UF8iznt.png",
+  //           porcentage: "80",
+  //           background: ["#4da7f1"],
+  //           name: "python",
+  //           description: "Server-side scripting language. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/8Ps1rue.png",
+  //           porcentage: "60",
+  //           background: ["#97c792"],
+  //           name: "node",
+  //           description: "Runtime environment. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       titulo: "FRAMEWORKS",
+  //       img: [
+  //         {
+  //           url: "https://i.imgur.com/oc09UDJ.png",
+  //           porcentage: "60",
+  //           background: ["#ffbfb5"],
+  //           name: "laravel",
+  //           description: "PHP framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/lN1Nz46.png",
+  //           porcentage: "80",
+  //           background: ["#ff888b"],
+  //           name: "angular",
+  //           description: "Frontend framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/Bev1pIh.png",
+  //           porcentage: "60",
+  //           background: ["#012a35"],
+  //           name: "react",
+  //           description: "JavaScript library for building user interfaces. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/TcK29dV.png",
+  //           porcentage: "80",
+  //           background: ["#aaaebb"],
+  //           name: "flask",
+  //           description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       titulo: "DATABASE",
+  //       img: [
+  //         {
+  //           url: "https://i.imgur.com/hKwsTJO.png",
+  //           porcentage: "80",
+  //           background: ["#e7f2ff"],
+  //           name: "mysql",
+  //           description: "Relational database management system. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/rODMeIK.png",
+  //           porcentage: "80",
+  //           background: ["#c8ffd4"],
+  //           name: "mongo",
+  //           description: "NoSQL database program. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       titulo: "OTROS",
+  //       img: [
+  //         {
+  //           url: "https://i.imgur.com/hgIDUXy.png",
+  //           porcentage: "90",
+  //           background: ["#ffffff"],
+  //           name: "jupyter",
+  //           description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/oXYhDTP.png",
+  //           porcentage: "80",
+  //           background: ["#ffafbd"],
+  //           name: "streamlit",
+  //           description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/yTOyd53.png",
+  //           porcentage: "60",
+  //           background: ["#bfcdff"],
+  //           name: "pandas",
+  //           description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/sNx0R94.png",
+  //           porcentage: "60",
+  //           background: ["#97def9"],
+  //           name: "numpy",
+  //           description: "Lorem ipsum"
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/Opw3ZsY.png",
+  //           porcentage: "30",
+  //           background: ["#bfffd1"],
+  //           name: "kafka",
+  //           description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         },
+  //         {
+  //           url: "https://i.imgur.com/8O62lkG.png",
+  //           porcentage: "50",
+  //           background: ["#ffce9a"],
+  //           name: "scikits.learn",
+  //           description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
+  //         }
+  //       ]
+  //     }
+  //   ];
 
-    return skills
-  }
+  //   return skills
+  // }
 
 
 
@@ -209,5 +209,48 @@ export class DataService {
 
     return projects
   }
-  
+
+
+  data_skills() {
+    let skills = [
+        {
+          logo: 'https://i.imgur.com/NY9613k.png',
+          titulo: 'Frontend',
+          skills: 'HTML, CSS, JavaScript, Bootstrap, jQuery'
+        },
+        {
+          logo: 'https://imgur.com/rGMGudU.png',
+          titulo: 'Backend',
+          skills: 'PHP, Node, Python'
+        },
+        {
+          logo: 'https://imgur.com/x3zodG2.png',
+          titulo: 'Database',
+          skills: 'MySQL, MongoDB'
+        },
+        {
+          logo: 'https://imgur.com/jnluudO.png',
+          titulo: 'Frameworks',
+          skills: 'Angular, React, Laravel, Flask'
+       },
+       {
+          logo: 'https://imgur.com/ZGA1fYq.png',
+          titulo: 'Machine Learn',
+          skills: 'Scikit-Learn, NumPy, Pandas, streamlit, jQuery, Microsoft Azure Machine Learning, Jupyter Notebooks'
+       }
+       
+      //  {
+      //     logo: '',
+      //     titulo: 'Otros',
+      //     skills: 'HTML, CSS, JavaScript, Bootstrap, jQuery'
+      //  }
+    ];
+
+
+
+
+    return skills;
+}
+
+
 }

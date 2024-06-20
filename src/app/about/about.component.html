@@ -44,9 +44,9 @@
             </header>
             <section class="skills">
                 <div class="header_skill">
-                    <h1>SKILLS</h1>
+                    <h1>My Skills</h1>
                 </div>
-                <div class="skills_container" #skillContainer>
+                <!-- <div class="skills_container" #skillContainer>
                     
                     <div class="skill" *ngFor="let skill of skills_data" #skill>
                         <p class="titulo" >{{skill.titulo}}</p>
@@ -65,6 +65,22 @@
                             <p class="name_lenguage">{{imagen.name}}</p>
                             <p class="skill-descripcion">{{imagen.description}}</p>
                         </div>
+                    </div>
+                    
+                </div> -->
+                <div class="skills_container" #skillContainer>
+                    
+                    <div class="skill" *ngFor="let skill of skills_data" #skill>
+                        
+                        
+                          
+
+                            <div class="contenedor-imagen">
+                                <img [src]="skill.logo" alt="" class="img_skill">
+                            </div>
+                            <p class="titulo" >{{skill.titulo}}</p>
+                            <p class="skill-descripcion">{{skill.skills}}</p>
+                     
                     </div>
                     
                 </div>
