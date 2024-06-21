@@ -12,6 +12,12 @@
     z-index: 1000;
 }
 
+.logo-letra{
+    font-size: 27px;
+    font-family: "Varela Round", sans-serif;
+    color: white;
+}
+
 .ruta_activa{
     font-weight: bold;
     color: rgb(0, 216, 209) !important; 

@@ -460,6 +460,12 @@
       overflow: hidden;
     }
 
+    .img_header_hijo2{
+      width: 100%;
+      object-fit: cover;
+      object-position: 110px;
+    }
+
     .cuadro_hijo2{
       padding-left: 0px;
     }
