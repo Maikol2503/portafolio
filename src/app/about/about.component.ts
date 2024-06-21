@@ -284,7 +284,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.tl.add(header_texto_nombre, 0)
       this.tl.add(header_texto_profesion, 0)
       this.tl.add(header_img, 1) // sube foto
-      this.tl.add(header_texto_sobre_mi, 1.5) // aparece texto
+      this.tl.add(header_texto_sobre_mi, 1.1) // aparece texto
       // this.tl.add(header_div_nombre, 1)
       // this.tl.add(header_div_profesion, 2)
       this.tl.add(header, 2) //header sube
