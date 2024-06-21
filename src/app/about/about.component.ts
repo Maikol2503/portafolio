@@ -145,7 +145,9 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1, duration: 2,  });
       // const header = gsap.to(".header", {y:"-100%", duration: 1, ease:"power1.out", onComplete:()=>{this.animacionBarrasSkill()} });
       const header = gsap.to(".header", {y:"-100%", duration: 2 });
-      const skills_container_move_top = gsap.to(".skills", { y: "0%", duration: 2});
+      const skills_container_remove_opacity = gsap.to(".skills", {opacity:1, direction:1});
+      const skills_container_move_top = gsap.to(".skills", { y: "0%", duration: 5});
+      const skill_move_top_opacity = [skills_container_remove_opacity, skills_container_move_top]
       const cuadro_hijo2 = gsap.to(".cuadro_hijo2", { duration: 10, right: "0%" });
       const skills_container_move_left = gsap.to(".skills", { x: "-100%", duration:15, opacity:0});
       const b3 = [skills_container_move_left , cuadro_hijo2]
@@ -164,7 +166,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.tl.add(header_div_nombre, 2)
       this.tl.add(header_div_profesion, 2)
       this.tl.add(header, 4) //header sube
-      this.tl.add(skills_container_move_top, 5) // sube skills
+      this.tl.add(skill_move_top_opacity, 5) // sube skills
       this.tl.add(b3, ">"); // skills mueve a la izquierda y cuadro_hijo2 mueve a la izquierda
       this.tl.add(c3, ">");
 
@@ -260,13 +262,15 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       
       const header_texto_nombre = gsap.to(".header .texto_nombre p", { y: "-100%", duration: 1 , opacity:0});
       const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: 1 });
-      const header_div_nombre = gsap.to(".header .texto_nombre", {top:"0%", y: "-100%", duration: 1 });
-      const header_div_profesion = gsap.to(".header .texto_profesion", {top:"0%", y: "-100%", duration: 1 });
+      // const header_div_nombre = gsap.to(".header .texto_nombre", {top:"0%", y: "-100%", duration: 1 });
+      // const header_div_profesion = gsap.to(".header .texto_profesion", {top:"0%", y: "-100%", duration: 1 });
       const header_img = gsap.to(".img_header", {height:'70vh',left:'-120px',  x: "0%", y:"-30%", duration: .5 , scale:1});
       const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1, duration: .5});
 
       const header = gsap.to(".header", {y:"-100%", duration: 2,  ease:"power1.in"});
-      const skills_container_move_top = gsap.to(".skills", { y: "-60%", duration: 4});
+      const skills_container_remove_opacity = gsap.to(".skills", {opacity:1, direction:2});
+      const skills_container_move_top = gsap.to(".skills", { y: "-60%", duration: 5});
+      const skill_move_top_opacity = [skills_container_remove_opacity, skills_container_move_top]
       const cuadro_hijo2 = gsap.to(".cuadro_hijo2", { duration: 2, right: "0%" });
       const skills_container_move_left = gsap.to(".skills", { x: "-100%", duration:5, opacity:0});
       const b3 = [skills_container_move_left , cuadro_hijo2]
@@ -280,11 +284,11 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.tl.add(header_texto_nombre, 0)
       this.tl.add(header_texto_profesion, 0)
       this.tl.add(header_img, 1) // sube foto
-      this.tl.add(header_texto_sobre_mi, 1.5) // aparecE texto
-      this.tl.add(header_div_nombre, 2)
-      this.tl.add(header_div_profesion, 2)
-      this.tl.add(header, 4) //header sube
-      this.tl.add(skills_container_move_top, 5.5) // sube skills
+      this.tl.add(header_texto_sobre_mi, 1.5) // aparece texto
+      // this.tl.add(header_div_nombre, 1)
+      // this.tl.add(header_div_profesion, 2)
+      this.tl.add(header, 2) //header sube
+      this.tl.add(skill_move_top_opacity, 3.3) // sube skills
       this.tl.add(b3, ">"); // skills mueve a la izquierda y cuadro_hijo2 mueve a la izquierda
       this.tl.add(c3, ">");
       
