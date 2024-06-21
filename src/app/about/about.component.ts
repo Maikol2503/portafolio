@@ -262,8 +262,8 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: 1 });
       const header_div_nombre = gsap.to(".header .texto_nombre", {top:"0%", y: "-100%", duration: 1 });
       const header_div_profesion = gsap.to(".header .texto_profesion", {top:"0%", y: "-100%", duration: 1 });
-      const header_img = gsap.to(".img_header", {height:'70vh',left:'-120px',  x: "0%", y:"-30%", duration: 1 , scale:1});
-      const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1, duration: 1});
+      const header_img = gsap.to(".img_header", {height:'70vh',left:'-120px',  x: "0%", y:"-30%", duration: .5 , scale:1});
+      const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1, duration: .5});
 
       const header = gsap.to(".header", {y:"-100%", duration: 2,  ease:"power1.in"});
       const skills_container_move_top = gsap.to(".skills", { y: "-60%", duration: 4});
@@ -279,8 +279,8 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       
       this.tl.add(header_texto_nombre, 0)
       this.tl.add(header_texto_profesion, 0)
-      this.tl.add(header_img, 1)
-      this.tl.add(header_texto_sobre_mi, 2)
+      this.tl.add(header_img, 1) // sube foto
+      this.tl.add(header_texto_sobre_mi, 1.5) // aparecE texto
       this.tl.add(header_div_nombre, 2)
       this.tl.add(header_div_profesion, 2)
       this.tl.add(header, 4) //header sube
