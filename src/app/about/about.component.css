@@ -148,7 +148,7 @@
   
   
   /* SKILLS */
-  .skills{
+  /* .skills{
     padding-top: 100px;
     position: absolute;
     top:0%;
@@ -157,33 +157,33 @@
     padding-bottom: 50px;
     transform: translateY(10%);
     opacity: 0;
-  }
+  } */
   
   
-  .skills_container{
+  /* .skills_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 50px auto 0px auto;
     max-width: 1200px;
     justify-items: center;
-}
+} */
 
-.header_skill{
+/* .header_skill{
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 50px;
-}
-
+} */
+/* 
 
 .skills h1{
     color: var(--color-titulo);
     font-size:30px;
     text-align: center;
-}
+} */
 
 
-.skill .titulo {
+/* .skill .titulo {
   background-color: var(--background-body);
   height: auto;
   display: inline;
@@ -192,9 +192,9 @@
   font-weight: 900;
   padding: 0px 0px 0px 0px;
   font-size: 25px;
-}
+} */
 
-.skill{
+/* .skill{
     padding:  10px;
     height: 250px;
     width: 250px;
@@ -202,11 +202,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
+  } */
 
   
 
-  .skill .inner-skill{
+  /* .skill .inner-skill{
     position: relative;
     padding:  10px;
     height: 220px;
@@ -216,73 +216,72 @@
     align-items: center;
     text-align: center;
     border: 1px solid rgb(68, 0, 255);
-  }
+  } */
 
 
-  .circle-porcentage{
+  /* .circle-porcentage{
     position: absolute;
     top: 0%;
     right: 14%;
     transform: translate(-14%, 0%);
-  }
+  } */
 
-  .porcentage{
+  /* .porcentage{
     font-size: 10px;
     position: absolute;
     top: 18px;
     right: 13px;
     color: white;
     letter-spacing: 1px;
-  }
+  } */
 
-  svg{
+  /* svg{
     width: 50px;
     height: 50px;
     z-index: 1000;
-  }
+  } */
 
-  .circle1{
+  /* .circle1{
     fill: rgba(8, 8, 8, 0.27);
     stroke: rgb(7, 7, 7);
     stroke-width: 5;
     stroke-dasharray: 100 100;
  
-}
+} */
 
-  .circle2{
+  /* .circle2{
     fill: none;
     stroke: rgb(0, 255, 234);
     stroke-dasharray: 0 100;
     stroke-width: 5;
     transform: rotate(-90deg);
     transform-origin: 50%;
-  }
+  } */
 
 
 
 
   
-
+/* 
   .skill .contenedor-imagen{
     height: 60%;
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
   
-  .skill .img_skill{
+  /* .skill .img_skill{
     max-width: 90%;
     max-height: 90%;
     object-fit: cover;
    object-position: center;
-   /* opacity: .3; */
-   /* filter: grayscale(100%); */
+ 
   }
-  
+   */
 
   
-  .container_barra{
+  /* .container_barra{
     width: 100%;
     height: 100%;
     position: relative;
@@ -290,36 +289,167 @@
     flex-direction: column;
     justify-content: flex-end;
     
-  }
+  } */
   
  
 
-
+/* 
   .name_lenguage{
     font-size: 20px;
     color: #ffffff;
     
-  }
+  } */
 
-  .skill .skill-descripcion{
+  /* .skill .skill-descripcion{
     font-size: 16px;
     margin-top: 7px;
     color: #ffffff82;
     overflow: hidden;
-    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto no cabe */
-  }
+    text-overflow: ellipsis;
+  } */
   
-  .container_barra_interno{
+  /* .container_barra_interno{
     position: relative;
     height: 0%;
     background-color: rgb(0, 128, 111);
     box-shadow: rgb(204, 219, 232) 0px 2px 0px 0px inset;
     border-radius: 10px 10px 0 0;
   }
+   */
   
   
   
+  .skills-section{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateX(0%);
+    padding-left: 70px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .skills-container{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+  }
+
+  .container-skill-info{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    opacity: 0;
+    transform: translateY(0%);
+    width: 40%;
+    padding: 20px;
+  }
+
+  .container-skill-info .skill-info-item{
+    margin-bottom: 30px;
+  }
+
+  .container-skill-info .skill-info-item h1{
+    color: white;
+    font-size: 1.5vw;
   
+  }
+
+  .container-skill-info .skill-info-item p{
+    color: rgb(200, 200, 200);
+    font-size: 1vw;
+    margin-top: 5px;
+  }
+
+
+
+   .container-skill-bar{
+    position: absolute;
+    opacity: 1;
+    top: 0%;
+    transform: translateY(100%);
+    right: 0%;
+    width: 50%;
+    /* border: 3px solid rgb(0, 136, 255); */
+    
+   
+    
+   }
+
+   .skill-bar{
+    /* border: 3px solid rgb(209, 207, 214); */
+    padding: 20px;
+    margin-top: 10px;
+    
+   }
+
+   .container-skill-bar .titulo{
+    font-size: 30px;
+    color: #686868;
+    font-weight: 700;
+    /* opacity: 0; */
+   }
+   
+
+   .container-skill-bar .contenedor-img{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .container-skill-bar .img_skill{
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+   }
+
+
+
+
+   .inner-skill{
+    /* border: 1px solid rgb(0, 100, 128); */
+    display: flex;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+   }
+
+   
+   .container-skill-bar .contenedor-porcentage{
+     
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 10px;
+     position: absolute;
+     left: 65px;
+     height: 50px;
+   }
+
+   .container-skill-bar .porcentage{
+    font-weight: 900;
+    font-size: 22px;
+    color: #f5f5f5;
+   }
+
+   .container-skill-bar .spam-porcentage{
+    font-size: 14px;
+    margin-left: 1px;
+    font-weight: 300;
+   }
+
+   .container-skill-bar .name_lenguage{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+   }
+
+
+
   
   
   
@@ -333,7 +463,6 @@
   
   /* EXPERIENCIA */
   .cuadro_hijo2{
-    
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -341,6 +470,15 @@
     right: -100%;
     z-index: 80;
     padding-left: 70px;
+  }
+
+  .cuadro_fondo_color{
+    position: absolute;
+    left: 90%;
+    bottom: 0px;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
   }
   
   .cuadro_hijo2 .img_header_hijo2{
@@ -360,8 +498,7 @@
     margin: 0 auto;
     height: 100vh;
     width: 100%;
-    
-    transform: translateY(50px);
+    transform: translateY(250px);
   }
   
 
@@ -369,7 +506,7 @@
   .subhijo_cuadro_hijo2 h1 {
     color: #ffffff;
     font-size: 40px;
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
 
@@ -384,7 +521,7 @@
   
   
   .experiencia{
-    transform: translateY(1000%);
+    transform: translateY(100vh);
     text-align: right;
     border-bottom: 1px solid var(--border-color);
     padding:10px;
@@ -415,8 +552,8 @@
   .texto_info{
     position: absolute;
     top: 50%;
-    left: 10px;
-    transform: translate(10px, -50%);
+    left: 0px;
+    transform: translate(0px, -50%);
     font-size: 18px;
     line-height: 30px;
     max-width: 40%;
@@ -521,111 +658,157 @@
 
 
 
-    .skills_container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-    }
 
-    .skills{
-      transform: translateY(30%);
-      padding-top: 0px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .skills-section{
+      width: 100vw;
+      height: 100%;
       padding-left: 0px;
-      opacity: 0;
+      /* border: 2px solid red; */
     }
 
-    .skill{
+
+    .skills-container{
+    
       display: flex;
       flex-direction: column;
-      align-items: center;
+      /* border: 2px solid rgb(0, 255, 55); */
+   
+    }
+
+    .container-skill-info{
+      position: relative;
+      top: 80%;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      /* border: 1px solid red; */
+      /* position: absolute;
+      top: 100%;
+      left: 0px;
+      opacity: 0;
+      transform: translateY(-50%); */
       text-align: center;
-      width: 90%;
+      /* top:0%;
+      rransform: translateY(-100%); */
+    }
+
+  
+  
+    .container-skill-info .skill-info-item{
+      margin-bottom: 30px;
+    }
+  
+    .container-skill-info .skill-info-item h1{
+      color: white;
+      font-size: 22px;
+    
+    }
+  
+    .container-skill-info .skill-info-item p{
+      color: rgb(178, 178, 178);
+      font-size: 16px;
+      margin-top: 5px;
+      line-height: 30px;
+    }
+  
+  
+  
+     .container-skill-bar{
+      margin-top: 150px;
+      transform: translateY(0%);
+      position: relative;
+      top: 0%;
+      opacity: 1;
+      position:relative;
+      width: 100%;
       height: auto;
-    }
-    
-    .skill .inner-skill{
-      width: 30vw;
-      padding: 10px 10px 20px 0px;
-    }
-
-    .skill .img_skill{
-      width: 40%;
-    }
-
-    .skill .titulo {
-      font-size: 35px;
+      /* border: 3px solid rgb(0, 136, 255); */
       
-    }
-
-    .skills h1{
-      margin-top: 0px;
+     
+      
+     }
+  
+     .skill-bar{
+      /* border: 3px solid rgb(209, 207, 214); */
+      padding: 20px;
+      margin-top: 10px;
+      
+     }
+  
+     .container-skill-bar .titulo{
       font-size: 30px;
-      text-align: center;
-      
-  }
-
-
-  .name_lenguage{
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #ffffffc3;
-  }
-
+      color: #686868;
+      font-weight: 700;
+      /* opacity: 0; */
+     }
+     
   
-
-  .btn-descargar-cv{
-    margin-top: 25px ;
-    background-color: var( --color-tema);
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-weight: 500;
-    border: none;
-    font-size: 14px;
-    float:inline-end ;
-  }
+     .container-skill-bar .contenedor-img{
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
   
-
-
-
-
-  .subhijo_cuadro_hijo2{
-    padding: 20px;
-  }
-
-
-  .texto_info{
-    color: #ffffffb6;
-    position: absolute;
-    top: 300px;
-    left: 10px;
-    transform: translate(0%, -50%);
-    font-size: 16px;
-    line-height: 26px;
-    max-width: 90%;
-    background-color: rgba(31, 31, 31, 0);
-    padding: 10px;
-    border-bottom: 0px solid var( --color-tema);
-  }
-
-  .subhijo_cuadro_hijo2 h1{
-    margin-top: 70px;
-    font-size: 30px;
-    padding-left: 0px;
-  }
-
-  .experiencias{
-    margin-top:100%;
-  }
-
-  .experiencia{
-    font-size: 22px;
-    width: 100%;
-    transform: translateY(2000%);
-    
-  }
-
-  .experiencia a{
-    width: 80%;
-  }
-  }
+     .container-skill-bar .img_skill{
+      max-width: 70%;
+      max-height: 70%;
+      height: auto;
+     }
+  
+  
+  
+  
+     .inner-skill{
+      /* border: 1px solid rgb(0, 100, 128); */
+      display: flex;
+      margin-top: 10px;
+      height: 50px;
+      width: 100%;
+      position: relative;
+     }
+  
+     
+     .container-skill-bar .contenedor-porcentage{
+       
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 0 10px;
+       position: absolute;
+       left: 65px;
+       height: 50px;
+     }
+  
+     .container-skill-bar .porcentage{
+      font-weight: 900;
+      font-size: 22px;
+      color: #f5f5f5;
+     }
+  
+     .container-skill-bar .spam-porcentage{
+      font-size: 14px;
+      margin-left: 1px;
+      font-weight: 300;
+     }
+  
+     .container-skill-bar .name_lenguage{
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+     }
+    }

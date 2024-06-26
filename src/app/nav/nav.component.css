@@ -82,7 +82,7 @@
 
 .lista-1-nav-iconos a{
     color: white;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
    
 }
 
@@ -90,15 +90,18 @@
     transform: rotate(-90deg);
     padding: 15px 0;
     margin: 20px 0;
+    
 }
 
 .lista-nav a {
     color: white;
+    
 }
 
 .icono_list_1{
     color: rgba(255, 255, 255, 0.472);
     font-size: 22px;
+    
 }
 
 .icono_list_1:hover{

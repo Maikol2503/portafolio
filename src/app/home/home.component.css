@@ -5,8 +5,9 @@
     justify-content: space-between;
     height: 100vh;
     width: 100%;
-    padding-bottom: 0px;
+    padding: 20px;
     overflow: hidden;
+    border: 1px solid red;
 }
 
 .titulo-pantalla-telefono{
@@ -56,7 +57,7 @@
 .seccion_1 .p1{
     position: relative;
     line-height: .9;
-    font-size: 140px;
+    font-size: 10vw;
 }
 
 
@@ -111,7 +112,7 @@
 }
 
 .apellido_p{
-    font-size: 140px;
+    font-size: 10vw;
     line-height: .9;
 }
 
@@ -201,8 +202,8 @@
 .splide__slide .img{
     object-fit: cover;
     object-position: center;
-    min-width: 25vw;
-    max-width: 25vw;
+    min-width: 400px;
+    max-width: 400px;
     max-height: auto;
     transition: all .2s;
     cursor: pointer;

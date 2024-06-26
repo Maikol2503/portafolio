@@ -42,50 +42,55 @@
                 </div>
                 
             </header>
-            <section class="skills">
-                <div class="header_skill">
-                    <h1>My Skills</h1>
-                </div>
-                <!-- <div class="skills_container" #skillContainer>
-                    
-                    <div class="skill" *ngFor="let skill of skills_data" #skill>
-                        <p class="titulo" >{{skill.titulo}}</p>
-                        <div class="inner-skill" *ngFor="let imagen of skill.img">
-                            <div class="circle-porcentage">
-                                <p class="porcentage">{{imagen.porcentage}}%</p>
-                                <svg >
-                                    <circle class="circle1" r="20" cx="50%" cy="50%" pathLength="100"/>
-                                    <circle class="circle2" r="20" cx="50%" cy="50%" pathLength="100"   />
-                                </svg>
-                            </div>
-
-                            <div class="contenedor-imagen">
-                                <img [src]="imagen.url" alt="" class="img_skill">
-                            </div>
-                            <p class="name_lenguage">{{imagen.name}}</p>
-                            <p class="skill-descripcion">{{imagen.description}}</p>
+            <section class="skills-section">
+                <div class="skills-container">
+                    <div class="container-skill-info">
+                        <div class="skill-info-item">
+                            <h1>Design + Development</h1>
+                            <p>Clean, modern designs - optimized for performance, search engines, and converting users to customers.</p>
+                        </div>
+                        <div class="skill-info-item">
+                            <h1>Technology</h1>
+                            <p>Combined all the latest technologies to create a progressive website.</p>
+                        </div>
+                        <div class="skill-info-item">
+                            <h1>Always Responsive</h1>
+                            <p>A responsive design makes your website accessible to all users, regardless of their device.</p>
                         </div>
                     </div>
-                    
-                </div> -->
-                <div class="skills_container" #skillContainer>
-                    
-                    <div class="skill" *ngFor="let skill of skills_data" #skill>
-                        
-                        
-                          
-
-                            <div class="contenedor-imagen">
-                                <img [src]="skill.logo" alt="" class="img_skill">
+                    <div class="container-skill-bar" #containerSkillBar>
+                        <div class="skill-bar" *ngFor="let skill of skills_data">
+                            <p class="titulo animate">{{skill.titulo}}</p>
+                            <div class="inner-skill animate" *ngFor="let imagen of skill.img" >
+                                <div class="contenedor-img" [style.background]="imagen.background[0]" >
+                                    <img [src]="imagen.url" alt="" class="img_skill">
+                                </div>
+                                <!-- <div class="contendor-name">
+                                    <p class="name_lenguage">{{imagen.name}}</p>
+                                </div> -->
+                                <div 
+                                    class="contenedor-porcentage" 
+                                    [style.width]="imagen.porcentage+'%' " 
+                                    [style.background]="'linear-gradient(to right, ' + imagen.background[0] + ' 2%, ' + imagen.background[1] + ' 60%)'"
+>                                   <p class="name_lenguage">{{imagen.name}}</p>
+                                    <p class="porcentage" >{{imagen.porcentage}}<span class="spam-porcentage">%</span></p>
+                                </div>
+                                <!-- <p class="skill-descripcion">
+                                    {{imagen.description}}
+                                </p> -->
                             </div>
-                            <p class="titulo" >{{skill.titulo}}</p>
-                            <p class="skill-descripcion">{{skill.skills}}</p>
-                     
+                        </div>
                     </div>
-                    
                 </div>
             </section>
-    
+
+
+
+
+
+
+
+          
             <section class="cuadro_hijo2">
                 <img class="img_header_hijo2" src="../../assets/img7.jpg" alt="">
                 <div class="subhijo_cuadro_hijo2">
