@@ -274,6 +274,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
 
       const container_skill_info_ani1 = gsap.to(".container-skill-info", {opacity:1, duration:1});
       const container_skill_info_ani2 = gsap.to(".container-skill-info", {opacity:1, duration:2,top:'0%'});
+      const skill_bar = gsap.to(".skill-bar", { opacity:1, duration:.2});
       const container_skill_bar = gsap.to(".container-skill-bar", { top:'0%',marginTop:'0px', duration: 1, delay:2});
       
       const skills_container = gsap.to(".skills-container", { duration: 5, top:'0%', y:'-300%'});
@@ -292,16 +293,16 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.tl.add(header_texto_sobre_mi, 1.1) // aparece texto
       this.tl.add(header, 2) //header sube
       this.tl.add(container_skill_info_ani1, 2.1)
-      this.tl.add([container_skill_info_ani2], 2.2)
-      this.tl.add(container_skill_bar, 1.5) // sube skills
-      this.tl.add(skills_container, 3.5)
+      this.tl.add(container_skill_info_ani2, 2.2)
+      this.tl.add([container_skill_bar], 1.5) 
+      this.tl.add([skills_container, skill_bar], 3.5)
       
       
 
       this.containerSkillBar.forEach((container)=> {
         const innerSkills = container.nativeElement.querySelectorAll('.contenedor-porcentage');
         innerSkills.forEach((innerSkill: HTMLElement, index:number) => {
-          this.delay = 1.7 + index * 0.05
+          this.delay = 1.6 + index * 0.04
           const a = gsap.from(innerSkill, {width:0, duration:.3, delay:this.delay, opacity:0});
           this.tl.add(a, this.delay);
       });
