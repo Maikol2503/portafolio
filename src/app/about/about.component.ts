@@ -240,7 +240,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     this.containerSkillBar.forEach((container)=> {
       const innerSkills = container.nativeElement.querySelectorAll('.contenedor-porcentage');
       innerSkills.forEach((innerSkill: HTMLElement, index:number) => {
-        this.delay = .8 + index * 0.03
+        this.delay = .9 + index * 0.03
         const a = gsap.from(innerSkill, {width:0, duration:.3, delay:this.delay, opacity:0});
         this.tl.add(a, this.delay);
     });
