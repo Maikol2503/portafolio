@@ -677,12 +677,12 @@
       width: 100vw;
       height: 100%;
       padding-left: 0px;
-      /* border: 2px solid red; */
+      border: 2px solid red;
     }
 
 
     .skills-container{
-    
+      height: 100%;
       display: flex;
       flex-direction: column;
       /* border: 2px solid rgb(0, 255, 55); */
@@ -737,7 +737,7 @@
       width: 100%;
       height: auto;
       text-align: center;
-      /* border: 3px solid rgb(0, 136, 255); */
+      border: 3px solid rgb(0, 136, 255);
       
      
       
