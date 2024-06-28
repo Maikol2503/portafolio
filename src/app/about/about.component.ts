@@ -151,6 +151,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     const img_header_hijo2 = gsap.to(".img_header_hijo2", { duration:2, top:"-100%"});
     const subhijo_cuadro_hijo2 = gsap.to(".subhijo_cuadro_hijo2", { duration:6, y:"0px"});
     
+
     this.tl.add(header_texto_nombre, 0)
     this.tl.add(header_texto_profesion, 0)
     this.tl.add(header_img, 1)
@@ -199,6 +200,8 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
 
 
 
+
+
     // ANIMACIONES PARA PANTLLAS DE MOVILES
     mm.add("(max-width: 800px)", (context) => {
       // Crear una única línea de tiempo
@@ -224,6 +227,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     const skills_section_ani_3 = gsap.to(".skills-section", { duration: 2,opacity:0, x:'-100%'});
     const cuadro_hijo2_ani1 = gsap.to(".cuadro_hijo2", { duration:1, x:"-100%"});
     const img_header_hijo2_ani2 = gsap.to(".img_header_hijo2", { duration:2, top:"-100%"});
+    const cuadro_hijo2_ani2 = gsap.to(".cuadro_hijo2", { duration: 1, y:'-50%'});
     
     this.tl.add(header_texto_nombre, 0)
     this.tl.add(header_texto_profesion, 0)
@@ -250,7 +254,11 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       const a = gsap.to(element, {y:'0vh', duration: 2,  delay:index * 0.01}); // Retraso para que las animaciones se ejecuten de manera escalonada
       this.tl.add(a, this.delay);
     });
+
+  this.tl.add(cuadro_hijo2_ani2 , ">");
+
   });
+
       
 
 
