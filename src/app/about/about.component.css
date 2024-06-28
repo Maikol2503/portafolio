@@ -32,7 +32,7 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
-    background-color: #121212;
+    background-color: black;
     position: relative;
   
   }
@@ -590,12 +590,16 @@
       overflow: hidden;
     }
 
+
    
 
     .header{
       padding-left: 0px;
     }
 
+    .container_header{
+      background-color: #121212;
+    }
     
     
     .header .texto_nombre{
