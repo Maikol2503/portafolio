@@ -274,7 +274,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
 
       const container_skill_info_ani1 = gsap.to(".container-skill-info", {opacity:1, duration:1});
       const container_skill_info_ani2 = gsap.to(".container-skill-info", {opacity:1, duration:1,top:'0%'});
-      const skill_bar = gsap.to(".skill-bar", { opacity:1, duration:.2});
+      const skill_bar = gsap.to(".skill-bar", { opacity:1, duration:.5});
       // const container_skill_bar = gsap.to(".container-skill-bar", { duration: 1, delay:1});
       
       const skills_container = gsap.to(".skills-container", { duration: 5,  y:'-1800px'});
