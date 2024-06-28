@@ -32,7 +32,7 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
-    background-color: black;
+    background-color: #121212;
     position: relative;
   
   }
@@ -624,7 +624,7 @@
     .header .texto_sobre_mi{
       font-size: 12px;
       max-width: 100%;
-      background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, rgb(0, 0, 0) 27%);
+      background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, #121212 27%);
       opacity: 0;
       height: auto;
       position: absolute;
@@ -660,12 +660,12 @@
 
     .skills-section{
       position: absolute;
-      top: 50%;
+      top: 100%;
       transform: translateY(0%);
       width: 100vw;
       height: auto;
       padding-left: 0px;
-      opacity: .2;
+      opacity: 0;
     }
 
 
