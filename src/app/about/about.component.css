@@ -677,7 +677,7 @@
       width: 100vw;
       height: 100%;
       padding-left: 0px;
-      border: 2px solid red;
+      /* border: 2px solid red; */
     }
 
 
@@ -737,7 +737,7 @@
       width: 100%;
       height: auto;
       text-align: center;
-      border: 3px solid rgb(0, 136, 255);
+      /* border: 3px solid rgb(0, 136, 255); */
       
      
       
