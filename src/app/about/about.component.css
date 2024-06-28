@@ -675,7 +675,7 @@
 
     .skills-section{
       position: absolute;
-      top: 60%;
+      top: 50%;
       transform: translateY(0%);
       width: 100vw;
       height: auto;
