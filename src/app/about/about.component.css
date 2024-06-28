@@ -728,7 +728,7 @@
   
   
      .container-skill-bar{
-      margin-top: 100px;
+      margin-top: 0px;
       transform: translateY(0%);
       position: relative;
       top: 0%;

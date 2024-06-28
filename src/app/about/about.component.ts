@@ -295,7 +295,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.tl.add(container_skill_info_ani1, 2.1)
       this.tl.add(container_skill_info_ani2, 2.2)
       this.tl.add([container_skill_bar], 1.5) 
-      this.tl.add([skills_container, skill_bar], 3)
+      this.tl.add([skills_container, skill_bar], 2.8)
       
       
 
