@@ -270,7 +270,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: 1 });
       const header_img = gsap.to(".img_header", {height:'70vh',left:'-120px',  x: "0%", y:"-30%", duration: .5 , scale:1});
       const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1, duration: .5});
-      const header = gsap.to(".header", {y:"-100%", duration: .9});
+      const header = gsap.to(".header", {y:"-100%", duration: .8});
       const skills_section_ani_1 = gsap.to(".skills-section", { duration: .5, opacity:1});
       const skills_section_ani_2 = gsap.to(".skills-section", { duration: 4,  y:'-70%', top:'0%'});
 
@@ -293,8 +293,8 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.tl.add(header_img, 1) // sube foto
       this.tl.add(header_texto_sobre_mi, 1.1) // aparece texto
       this.tl.add(header, 2) //header sube
-      this.tl.add([skills_section_ani_1, skills_section_ani_2], 2.5)
-      // this.tl.add(container_skill_info_ani2, 2)
+      this.tl.add([skills_section_ani_1], 2.2)
+      this.tl.add([skills_section_ani_2], 2.3)
       // // this.tl.add([container_skill_bar], 1.5) 
       // this.tl.add([skills_container, skill_bar], 3.8)
       
@@ -303,7 +303,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.containerSkillBar.forEach((container)=> {
         const innerSkills = container.nativeElement.querySelectorAll('.contenedor-porcentage');
         innerSkills.forEach((innerSkill: HTMLElement, index:number) => {
-          this.delay = 1.4 + index * 0.04
+          this.delay = 1.3 + index * 0.03
           const a = gsap.from(innerSkill, {width:0, duration:.3, delay:this.delay, opacity:0});
           this.tl.add(a, this.delay);
       });
