@@ -462,24 +462,17 @@
   
   
   /* EXPERIENCIA */
+  
   .cuadro_hijo2{
     height: 100vh;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 0px;
     right: -100%;
     z-index: 80;
     padding-left: 70px;
   }
 
-  .cuadro_fondo_color{
-    position: absolute;
-    left: 90%;
-    bottom: 0px;
-    background-color: #ffffff;
-    height: 100vh;
-    width: 100%;
-  }
   
   .cuadro_hijo2 .img_header_hijo2{
     position: absolute;
@@ -597,15 +590,7 @@
       overflow: hidden;
     }
 
-    .img_header_hijo2{
-      width: 100%;
-      object-fit: cover;
-      object-position: 110px;
-    }
-
-    .cuadro_hijo2{
-      padding-left: 0px;
-    }
+   
 
     .header{
       padding-left: 0px;
@@ -716,7 +701,7 @@
   
     .container-skill-info .skill-info-item h1{
       color: white;
-      font-size: 22px;
+      font-size: 20px;
     
     }
   
@@ -814,4 +799,129 @@
       font-size: 16px;
       font-weight: 500;
      }
+
+
+     .btn-descargar-cv{
+      width: 129px;
+        height: 50px;
+        float: right;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0px;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     .cuadro_hijo2{
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      right: -100%;
+      z-index: 80;
+      padding-left: 0px;
+    }
+  
+
+
+     .img_header_hijo2{
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .cuadro_hijo2{
+      padding-left: 0px;
+    }
+
+
+    .subhijo_cuadro_hijo2{
+      margin: 0 ;
+  
+
+      height: auto;
+      width: 100%;
+      transform: translateY(60px);
+      position: relative;
+    }
+    
+  
+  
+    .subhijo_cuadro_hijo2 h1 {
+      color: #ffffff;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+  
+  
+    .experiencias{
+      display: block;
+      flex-direction: column;
+      align-items: end;
+      width: 100%;
+      
+    }
+    
+    
+    .experiencia{
+      transform: translateY(100vh);
+      text-align: right;
+      border-bottom: 1px solid var(--border-color);
+      padding:10px;
+      width: 100%;
+      display: block;
+      justify-content: none;
+      align-items: none;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 30px;
+    }
+    
+    .experiencia a{
+      color: white;
+      width: 50%;
+      text-align: end;
+    }
+    
+    .experiencia a:hover{
+      color: rgb(0, 255, 238);
+    }
+  
+    .subhijo_cuadro_hijo2 h1{
+      margin-top: 20px;
+     font-size: 40px;
+    }
+    
+    .texto_info{
+      position: relative;
+      top: auto;
+      left:auto;
+      transform: none;
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 100%;
+      padding: 15px;
+      color: white;
+      background: none;
+      border-bottom: none;
+      
+    }
+
+
+
+
+     
     }
