@@ -275,7 +275,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       const container_skill_info_ani1 = gsap.to(".container-skill-info", {opacity:1, duration:1});
       const container_skill_info_ani2 = gsap.to(".container-skill-info", {opacity:1, duration:1,top:'0%'});
       const skill_bar = gsap.to(".skill-bar", { opacity:1, duration:.2});
-      const container_skill_bar = gsap.to(".container-skill-bar", { top:'0%',marginTop:'0px', duration: 1, delay:2});
+      // const container_skill_bar = gsap.to(".container-skill-bar", { duration: 1, delay:1});
       
       const skills_container = gsap.to(".skills-container", { duration: 5,  y:'-1800px'});
       // const skills_container_move_left = gsap.to(".skills", { x: "-100%", duration:5, opacity:0});
@@ -294,7 +294,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       this.tl.add(header, 2) //header sube
       this.tl.add(container_skill_info_ani1, 2.1)
       this.tl.add(container_skill_info_ani2, 2.2)
-      this.tl.add([container_skill_bar], 1.5) 
+      // this.tl.add([container_skill_bar], 1.5) 
       this.tl.add([skills_container, skill_bar], 2.8)
       
       
