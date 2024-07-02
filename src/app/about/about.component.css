@@ -28,7 +28,7 @@
   }
   
   .container_header{
-   
+    
     max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
@@ -44,7 +44,13 @@
     top: 40%;
     left: 20px;
     transform:  translate(20px, -40%);
+    
   }
+
+  .header .texto_nombre div{
+    overflow: hidden;
+  }
+
   
   .header .texto_profesion{
     color: white;
@@ -56,19 +62,22 @@
     white-space: nowrap;
 
   }
-  
-  .header div{
-    line-height: 0.9;
+
+  .header .texto_profesion div{
     overflow: hidden;
   }
+
   
+  
+ 
   
   
   .img_header{
     object-fit: contain;
     height: 95vh;
-    position: absolute;  
+    position: absolute;
     z-index: 10000;
+    
   }
   
   .texto_nombre p{
@@ -114,7 +123,7 @@
     padding: 5px;
     width: 40px;
     position: absolute;
-    bottom:20px;
+    bottom:-25px;
     left: 50%;
     z-index: 1000000;
     animation: bounce 2s infinite;
@@ -144,179 +153,6 @@
 
 
 
-
-  
-  
-  /* SKILLS */
-  /* .skills{
-    padding-top: 100px;
-    position: absolute;
-    top:0%;
-    width: 100%;
-    padding-left: 70px;
-    padding-bottom: 50px;
-    transform: translateY(10%);
-    opacity: 0;
-  } */
-  
-  
-  /* .skills_container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 50px auto 0px auto;
-    max-width: 1200px;
-    justify-items: center;
-} */
-
-/* .header_skill{
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-} */
-/* 
-
-.skills h1{
-    color: var(--color-titulo);
-    font-size:30px;
-    text-align: center;
-} */
-
-
-/* .skill .titulo {
-  background-color: var(--background-body);
-  height: auto;
-  display: inline;
-  letter-spacing: 2px;
-  color: rgb(210, 210, 210);
-  font-weight: 900;
-  padding: 0px 0px 0px 0px;
-  font-size: 25px;
-} */
-
-/* .skill{
-    padding:  10px;
-    height: 250px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  } */
-
-  
-
-  /* .skill .inner-skill{
-    position: relative;
-    padding:  10px;
-    height: 220px;
-    width: 180px;
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid rgb(68, 0, 255);
-  } */
-
-
-  /* .circle-porcentage{
-    position: absolute;
-    top: 0%;
-    right: 14%;
-    transform: translate(-14%, 0%);
-  } */
-
-  /* .porcentage{
-    font-size: 10px;
-    position: absolute;
-    top: 18px;
-    right: 13px;
-    color: white;
-    letter-spacing: 1px;
-  } */
-
-  /* svg{
-    width: 50px;
-    height: 50px;
-    z-index: 1000;
-  } */
-
-  /* .circle1{
-    fill: rgba(8, 8, 8, 0.27);
-    stroke: rgb(7, 7, 7);
-    stroke-width: 5;
-    stroke-dasharray: 100 100;
- 
-} */
-
-  /* .circle2{
-    fill: none;
-    stroke: rgb(0, 255, 234);
-    stroke-dasharray: 0 100;
-    stroke-width: 5;
-    transform: rotate(-90deg);
-    transform-origin: 50%;
-  } */
-
-
-
-
-  
-/* 
-  .skill .contenedor-imagen{
-    height: 60%;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-  
-  /* .skill .img_skill{
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: cover;
-   object-position: center;
- 
-  }
-   */
-
-  
-  /* .container_barra{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    
-  } */
-  
- 
-
-/* 
-  .name_lenguage{
-    font-size: 20px;
-    color: #ffffff;
-    
-  } */
-
-  /* .skill .skill-descripcion{
-    font-size: 16px;
-    margin-top: 7px;
-    color: #ffffff82;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  } */
-  
-  /* .container_barra_interno{
-    position: relative;
-    height: 0%;
-    background-color: rgb(0, 128, 111);
-    box-shadow: rgb(204, 219, 232) 0px 2px 0px 0px inset;
-    border-radius: 10px 10px 0 0;
-  }
-   */
-  
   
   
   .skills-section{
@@ -588,31 +424,44 @@
 
     .cuadro_padre{
       overflow: hidden;
+      height: 100vh;
     }
 
 
    
 
     .header{
+      /* min-height: 100vh; */
       padding-left: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+      background-color: #121212;
+      padding-bottom: 50px;
     }
+
+
 
     .container_header{
       background-color: #121212;
+      padding-top: 0px;
+      height: auto;
+      margin-top: 60px;
     }
     
     
     .header .texto_nombre{
+      position: absolute;
       width: 80vw;
       font-weight: 600;
       max-height: 20vh;
       font-size: 15vw;
-      top: 22%;
-      left:auto;
-      right: 20px;
-      transform: translate(0px, -100%);
+      top:auto;
+      left:100%;
       text-align: end;
-      color: rgba(255, 255, 255, 0.338);
+      padding-right: 20px;
+      transform: translate(-100%, 0%);
+      color: rgba(255, 255, 255, 0.167);
+      
     }
     
     .header .texto_profesion{
@@ -621,23 +470,27 @@
     }
     
     .img_header{
-      height: 75vh;
-      
+      height: 80vh;
+      width: 200vw;
+      position: relative;
+      margin-top: 18vh;
     }
     
     .header .texto_sobre_mi{
       font-size: 12px;
       max-width: 100%;
-      background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, #121212 27%);
+      /* background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, #121212 27%); */
       opacity: 0;
-      height: auto;
+      /* min-height: 100vh; */
       position: absolute;
-      top: 100%;
+      top:auto;
       right:0px;
-      transform: translate(0, -100%);
+      transform: none;
       line-height: 20px;
       z-index: 100000;
-      padding: 50px 15px 20px 15px;
+      padding: 20px;
+      height:auto;
+      text-align: center;
     }
 
 
@@ -808,7 +661,7 @@
      .btn-descargar-cv{
       width: 129px;
         height: 50px;
-        float: right;
+        
         font-size: 14px;
         font-weight: 700;
         padding: 0px;

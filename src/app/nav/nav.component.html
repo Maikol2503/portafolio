@@ -2,7 +2,7 @@
 <nav class="nav">
     <div class="logo-idiomas-div">
         <div class="logo">
-            <a href=""><p class="logo-letra"  [ngClass]="{'ruta_activa': rutaActiva === '/'}">M</p></a>
+            <a href=""><p class="logo-letra"  [ngClass]="{'ruta_activa': rutaActiva === '/'}" translate="no">M</p></a>
         </div>
         
 
@@ -13,9 +13,9 @@
         </ul> -->
     </div>
     <ul class="lista-1-nav-iconos"> 
-        <li class="item_list_1"><a routerLink="/home" [ngClass]="{'ruta_activa': rutaActiva === '/' || rutaActiva === '/home'}">Home</a></li>
-        <li class="item_list_1"><a routerLink="/about"  [ngClass]="{'ruta_activa': rutaActiva === '/about'}">About</a></li>
-        <li class="item_list_1"><a routerLink="/proyectos" [ngClass]="{'ruta_activa': rutaActiva === '/proyectos'}">projects</a></li>
+        <li class="item_list_1"><a routerLink="/home" [ngClass]="{'ruta_activa': rutaActiva === '/' || rutaActiva === '/home'}" translate="no">Home</a></li>
+        <li class="item_list_1"><a routerLink="/about"  [ngClass]="{'ruta_activa': rutaActiva === '/about'}" translate="no">About</a></li>
+        <li class="item_list_1"><a routerLink="/proyectos" [ngClass]="{'ruta_activa': rutaActiva === '/proyectos'}" translate="no">projects</a></li>
     </ul>
     <ul class="lista-2-nav-iconos"> 
         <li class="item_list_2"><a href="https://github.com/Maikol2503" target="_blank" ><ion-icon name="logo-github" class="icon_git"></ion-icon></a></li>

@@ -136,11 +136,11 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       }
     });
       
-    const header_texto_nombre = gsap.to(".header .texto_nombre p", { y: "-100%", duration: 1 , opacity:0});
-    const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: 1 });
-    const header_div_nombre = gsap.to(".header .texto_nombre", {top:"0%", y: "-100%", duration: 1 });
-    const header_div_profesion = gsap.to(".header .texto_profesion", {top:"0%", y: "-100%", duration: 1 });
-    const header_img = gsap.to(".img_header", {left:"-100px" , x: "0%", y:"0%", duration: 1 , scale:1, });
+    const header_texto_nombre = gsap.to(".header .texto_nombre p", { y: "-100%", duration: .5 , opacity:0});
+    const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: .5 });
+    // const header_div_nombre = gsap.to(".header .texto_nombre", {top:"0%", y: "-100%", duration: 1 });
+    // const header_div_profesion = gsap.to(".header .texto_profesion", {top:"0%", y: "-100%", duration: 1 });
+    const header_img = gsap.to(".img_header", {left:"0px" , x: "0%", y:"0%", duration: 1  });
     const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1, duration: 1,  });
     // const header = gsap.to(".header", {y:"-100%", duration: 1, ease:"power1.out", onComplete:()=>{this.animacionBarrasSkill()} });
     const header = gsap.to(".header", {y:"-100%", duration: 2 });
@@ -154,19 +154,19 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
 
     this.tl.add(header_texto_nombre, 0)
     this.tl.add(header_texto_profesion, 0)
-    this.tl.add(header_img, 1)
-    this.tl.add(header_texto_sobre_mi, 1)
-    this.tl.add(header_div_nombre, 1.5)
-    this.tl.add(header_div_profesion, 1.5)
-    this.tl.add(header, 2.5) //header sube
-    this.tl.add(container_skill_info,3.5) // texto info skill sube al centro
-    this.tl.add(container_skill_bar,3)
+    this.tl.add(header_img, 0)
+    this.tl.add(header_texto_sobre_mi, .2)
+    // this.tl.add(header_div_nombre, 1)
+    // this.tl.add(header_div_profesion, 1)
+    this.tl.add(header, 1) //header sube
+    this.tl.add(container_skill_info,1.5) // texto info skill sube al centro
+    this.tl.add(container_skill_bar,1.5)
     
 
     this.containerSkillBar.forEach((container)=> {
         const innerSkills = container.nativeElement.querySelectorAll('.contenedor-porcentage');
         innerSkills.forEach((innerSkill: HTMLElement, index:number) => {
-          this.delay = 1.8 + index * 0.05
+          this.delay = 1.1 + index * 0.05
           const a = gsap.from(innerSkill, {width:0, duration:.3, delay:this.delay, opacity:0});
           this.tl.add(a, this.delay);
       });
@@ -178,7 +178,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
 
     // Recorro los elementos secundarios y aplica animaciones
     experiencia.forEach((element: gsap.TweenTarget, index: number) => {
-      this.delay = 11.8 + index * 0.5
+      this.delay = 9.8 + index * 0.5
         const a = gsap.to(element, {y:'0vh', duration: 2,  delay:index * 0.01}); // Retraso para que las animaciones se ejecuten de manera escalonada
         this.tl.add(a, this.delay);
       });
@@ -219,8 +219,10 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
       
     const header_texto_nombre = gsap.to(".header .texto_nombre p", { y: "-100%", duration: 1 , opacity:0});
     const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: 1 });
-    const header_img = gsap.to(".img_header", {height:'70vh',left:'-120px',  x: "0%", y:"-30%", duration: .5 , scale:1});
-    const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1, duration: .5});
+    const textos_nombres = gsap.to(".texto_nombre", { y: "-100%", duration: 1 , position:'absolute'});
+    const header_img_ani1 = gsap.to(".img_header", {left:'50%', x:"-50%",top:'0%', y:"0px", duration: .5, marginTop:'50px' });
+    const header_img_ani2 = gsap.to(".img_header", {position:'relative', duration: .5 , height:'300px', paddingTop:'10px', width:'300px', borderRadius:'100%', background:'black' });
+    const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1,position:'relative', duration: .5});
     const header = gsap.to(".header", {y:"-100%", duration: 1});
     const skills_section_ani_1 = gsap.to(".skills-section", { duration: 1, opacity:1});
     const skills_section_ani_2 = gsap.to(".skills-section", { duration: 4,  y:'-70%', top:'0%'});
@@ -231,11 +233,13 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     
     this.tl.add(header_texto_nombre, 0)
     this.tl.add(header_texto_profesion, 0)
-    this.tl.add(header_img, .1) // sube foto
+    this.tl.add(textos_nombres, 0.1)
+    this.tl.add(header_img_ani1, .1) // sube foto
+    this.tl.add(header_img_ani2, .1) // sube foto
     this.tl.add(header_texto_sobre_mi, .2) // aparece texto
     this.tl.add(header, .9) //header sube
-    this.tl.add([skills_section_ani_1], 1.1)
-    this.tl.add([skills_section_ani_2], 1.1)
+    this.tl.add([skills_section_ani_1], 1.05)
+    this.tl.add([skills_section_ani_2], 1.05)
   
     this.containerSkillBar.forEach((container)=> {
       const innerSkills = container.nativeElement.querySelectorAll('.contenedor-porcentage');

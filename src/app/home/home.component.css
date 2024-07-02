@@ -456,10 +456,13 @@
     
 }
 
-.splide__slide .img{
-    max-width: 75vw;
-}
 
+.splide__slide .img{
+    
+    min-width: 300px;
+    max-width: 300px;
+    
+} 
 .img-div{
    
 }
