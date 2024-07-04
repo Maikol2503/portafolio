@@ -210,7 +210,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
           trigger: ".cuadro_padre",
           markers: false,
           start: "top top",
-          end: "+=8000vh",
+          end: "+=6000vh",
           scrub: true,
           pin: true
       }
