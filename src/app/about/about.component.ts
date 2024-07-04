@@ -240,15 +240,15 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     this.tl.add(header_img_ani2, .1) // sube foto
     this.tl.add(header_texto_sobre_mi, .1) // aparece texto
     this.tl.add([header, arrow_container_flecha], .5) //header sube
-    this.tl.add([skills_section_ani_1], .6)
-    this.tl.add([skills_section_ani_2], .6)
+    this.tl.add([skills_section_ani_1], .5)
+    this.tl.add([skills_section_ani_2], .5)
     this.tl.add([skills_section_ani_3], ">")
   
     this.containerSkillBar.forEach((container)=> {
       const innerSkills = container.nativeElement.querySelectorAll('.contenedor-porcentage');
       innerSkills.forEach((innerSkill: HTMLElement, index:number) => {
-        this.delay = .8 + index * 0.03
-        const a = gsap.from(innerSkill, {width:0, duration:.3, delay:this.delay, opacity:0});
+        this.delay = .7 + index * 0.04
+        const a = gsap.from(innerSkill, {width:0, duration:.4, delay:this.delay, opacity:0});
         this.tl.add(a, this.delay);
     });
   });
@@ -257,8 +257,8 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
   this.tl.add( img_header_hijo2_ani2, ">");
 
   experiencia.forEach((element: gsap.TweenTarget, index: number) => {
-    this.delay = 4 + index * 0.5
-      const a = gsap.to(element, {y:'0vh', duration: 2,  delay:index * 0.01}); // Retraso para que las animaciones se ejecuten de manera escalonada
+    this.delay = 5 + index * 0.1
+      const a = gsap.to(element, {y:'0vh', duration: .7,  delay:index * 0.01}); // Retraso para que las animaciones se ejecuten de manera escalonada
       this.tl.add(a, this.delay);
     });
 
