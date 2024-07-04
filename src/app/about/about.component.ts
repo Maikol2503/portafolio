@@ -235,13 +235,13 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     
     this.tl.add(header_texto_nombre, 0)
     this.tl.add(header_texto_profesion, 0)
-    this.tl.add(textos_nombres, 0.1)
+    this.tl.add(textos_nombres, .1)
     this.tl.add(header_img_ani1, .1) // sube foto
     this.tl.add(header_img_ani2, .1) // sube foto
     this.tl.add(header_texto_sobre_mi, .1) // aparece texto
-    this.tl.add([header, arrow_container_flecha], 1) //header sube
-    this.tl.add([skills_section_ani_1], 1)
-    this.tl.add([skills_section_ani_2], 1)
+    this.tl.add([header, arrow_container_flecha], .6) //header sube
+    this.tl.add([skills_section_ani_1], .6)
+    this.tl.add([skills_section_ani_2], .6)
     this.tl.add([skills_section_ani_3], ">")
   
     this.containerSkillBar.forEach((container)=> {
