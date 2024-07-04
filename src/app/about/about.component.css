@@ -38,12 +38,13 @@
   }
   
   .header .texto_nombre{
-    color: white;
+    color: rgb(172, 255, 254);
     font-size: 80px;
     position: absolute;
     top: 40%;
     left: 20px;
     transform:  translate(20px, -40%);
+    font-weight: 800;
     
   }
 
@@ -53,13 +54,14 @@
 
   
   .header .texto_profesion{
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 40px;
     position: absolute;
     top: 50%;
     right: 20px;
     transform:  translate(-20px, -50%);
     white-space: nowrap;
+    font-weight: 800;
 
   }
 
@@ -188,9 +190,9 @@
   }
 
   .container-skill-info .skill-info-item h1{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.5vw;
-  
+    font-weight: 800;
   }
 
   .container-skill-info .skill-info-item p{
@@ -479,7 +481,8 @@
     }
     
     .header .texto_sobre_mi{
-      font-size: 12px;
+      color: #f5f5f5d5;
+      font-size: 16px;
       max-width: 100%;
       /* background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, #121212 27%); */
       opacity: 0;
@@ -488,11 +491,17 @@
       top:auto;
       right:0px;
       transform: none;
-      line-height: 20px;
+      line-height: 25px;
       z-index: 100000;
       padding: 20px;
       height:auto;
       text-align: center;
+    }
+
+    .spam-texto-grande{
+      font-size: 22px;
+      color:white;
+      font-weight: 800;
     }
 
 
@@ -519,12 +528,13 @@
 
     .skills-section{
       position: absolute;
-      top: 40%;
+      top: 100%;
       transform: translateY(0%);
       width: 100vw;
       height: auto;
       padding-left: 0px;
       opacity: 0;
+      margin-top: 70px;
     }
 
 

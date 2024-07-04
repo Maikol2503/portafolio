@@ -1,7 +1,7 @@
 .nav{
-    background-color: rgba(56, 56, 56, 0.937);
+    background-color: rgba(22, 22, 22, 0.937);
     backdrop-filter: blur(10px);
-    border-right: 2px solid rgba(255, 255, 255, 0.145);
+    border-right: 2px solid rgba(255, 255, 255, 0);
     width: 70px;
     height: 100vh;
     display: flex;
