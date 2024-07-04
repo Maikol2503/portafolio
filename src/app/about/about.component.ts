@@ -221,7 +221,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: 1 });
     const textos_nombres = gsap.to(".texto_nombre", { y: "-100%", duration: 1 , position:'absolute'});
     const header_img_ani1 = gsap.to(".img_header", {left:'50%', x:"-50%",top:'0%', y:"0px", duration: .5, marginTop:'50px' });
-    const header_img_ani2 = gsap.to(".img_header", {position:'relative', duration: 1 , height:'300px', paddingTop:'10px', width:'300px', borderRadius:'100%', background:'#1ad4d4' });
+    const header_img_ani2 = gsap.to(".img_header", {position:'relative', duration: 1 , height:'300px', paddingTop:'10px', width:'300px', borderRadius:'100%', background:'#1a1a1a' });
     const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1,position:'relative', duration: .5});
     const header = gsap.to(".header", {y:"-100%", duration: 2});
     const skills_section_ani_1 = gsap.to(".skills-section", { duration: 1, opacity:1});
