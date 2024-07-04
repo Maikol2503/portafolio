@@ -221,15 +221,15 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: 1 });
     const textos_nombres = gsap.to(".texto_nombre", { y: "-100%", duration: 1 , position:'absolute'});
     const header_img_ani1 = gsap.to(".img_header", {left:'50%', x:"-50%",top:'0%', y:"0px", duration: .5, marginTop:'50px' });
-    const header_img_ani2 = gsap.to(".img_header", {position:'relative', duration: .5 , height:'300px', paddingTop:'10px', width:'300px', borderRadius:'100%', background:'black' });
+    const header_img_ani2 = gsap.to(".img_header", {position:'relative', duration: 1 , height:'300px', paddingTop:'10px', width:'300px', borderRadius:'100%', background:'#1ad4d4' });
     const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1,position:'relative', duration: .5});
-    const header = gsap.to(".header", {y:"-100%", duration: 1});
+    const header = gsap.to(".header", {y:"-100%", duration: 2});
     const skills_section_ani_1 = gsap.to(".skills-section", { duration: 1, opacity:1});
-    const skills_section_ani_2 = gsap.to(".skills-section", { duration: 4,  y:'-70%', top:'0%'});
+    const skills_section_ani_2 = gsap.to(".skills-section", { duration: 8,  y:'-70%', top:'0%'});
     const skills_section_ani_3 = gsap.to(".skills-section", { duration: 2,opacity:0, x:'-100%'});
     const cuadro_hijo2_ani1 = gsap.to(".cuadro_hijo2", { duration:1, x:"-100%"});
     const img_header_hijo2_ani2 = gsap.to(".img_header_hijo2", { duration:2, top:"-100%"});
-    const cuadro_hijo2_ani2 = gsap.to(".cuadro_hijo2", { duration: 1, y:'-40%'});
+    const cuadro_hijo2_ani2 = gsap.to(".cuadro_hijo2", { duration: 2, y:'-40%'});
     
     this.tl.add(header_texto_nombre, 0)
     this.tl.add(header_texto_profesion, 0)
@@ -237,29 +237,29 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     this.tl.add(header_img_ani1, .1) // sube foto
     this.tl.add(header_img_ani2, .1) // sube foto
     this.tl.add(header_texto_sobre_mi, .2) // aparece texto
-    this.tl.add(header, .9) //header sube
-    this.tl.add([skills_section_ani_1], 1.05)
-    this.tl.add([skills_section_ani_2], 1.05)
+    this.tl.add(header, 1.7) //header sube
+    this.tl.add([skills_section_ani_1], 2)
+    this.tl.add([skills_section_ani_2], 3.2)
   
     this.containerSkillBar.forEach((container)=> {
       const innerSkills = container.nativeElement.querySelectorAll('.contenedor-porcentage');
       innerSkills.forEach((innerSkill: HTMLElement, index:number) => {
-        this.delay = .8 + index * 0.04
-        const a = gsap.from(innerSkill, {width:0, duration:.3, delay:this.delay, opacity:0});
+        this.delay = 1.9 + index * 0.06
+        const a = gsap.from(innerSkill, {width:0, duration:.4, delay:this.delay, opacity:0});
         this.tl.add(a, this.delay);
     });
   });
 
-  this.tl.add([skills_section_ani_3,cuadro_hijo2_ani1], ">+1.8"); 
+  this.tl.add([skills_section_ani_3,cuadro_hijo2_ani1], ">+4"); 
   this.tl.add( img_header_hijo2_ani2, ">");
 
   experiencia.forEach((element: gsap.TweenTarget, index: number) => {
-    this.delay = 6 + index * 0.5
+    this.delay = 11 + index * 0.5
       const a = gsap.to(element, {y:'0vh', duration: 2,  delay:index * 0.01}); // Retraso para que las animaciones se ejecuten de manera escalonada
       this.tl.add(a, this.delay);
     });
 
-  this.tl.add(cuadro_hijo2_ani2 , ">-1");
+  this.tl.add(cuadro_hijo2_ani2 , ">+.5");
 
   });
 

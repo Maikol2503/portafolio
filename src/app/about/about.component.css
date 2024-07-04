@@ -435,14 +435,16 @@
       padding-left: 0px;
       padding-top: 0px;
       margin-top: 0px;
-      background-color: #121212;
+      background-color: #000000;
       padding-bottom: 50px;
+      border: 2px solid blue;
+      position: relative;
     }
 
 
 
     .container_header{
-      background-color: #121212;
+      background-color: #000000;
       padding-top: 0px;
       height: auto;
       margin-top: 60px;
@@ -474,6 +476,7 @@
       width: 200vw;
       position: relative;
       margin-top: 18vh;
+     
     }
     
     .header .texto_sobre_mi{
@@ -517,12 +520,13 @@
 
     .skills-section{
       position: absolute;
-      top: 100%;
+      top: 30%;
       transform: translateY(0%);
       width: 100vw;
       height: auto;
       padding-left: 0px;
       opacity: 0;
+      border: 2px solid red;
     }
 
 
