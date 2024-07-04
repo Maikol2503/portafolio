@@ -437,7 +437,6 @@
       margin-top: 0px;
       background-color: #000000;
       padding-bottom: 50px;
-      border: 2px solid blue;
       position: relative;
     }
 
@@ -526,7 +525,6 @@
       height: auto;
       padding-left: 0px;
       opacity: 0;
-      border: 2px solid red;
     }
 
 
