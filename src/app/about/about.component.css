@@ -123,7 +123,7 @@
     padding: 5px;
     width: 40px;
     position: absolute;
-    bottom:-25px;
+    bottom:-50px;
     left: 50%;
     z-index: 1000000;
     animation: bounce 2s infinite;
@@ -435,7 +435,7 @@
       padding-left: 0px;
       padding-top: 0px;
       margin-top: 0px;
-      background-color: #000000;
+      background-color: #121212;
       padding-bottom: 50px;
       position: relative;
     }
@@ -443,7 +443,7 @@
 
 
     .container_header{
-      background-color: #000000;
+      background-color: #121212;
       padding-top: 0px;
       height: auto;
       margin-top: 60px;
@@ -519,7 +519,7 @@
 
     .skills-section{
       position: absolute;
-      top: 30%;
+      top: 40%;
       transform: translateY(0%);
       width: 100vw;
       height: auto;
