@@ -46,16 +46,27 @@
                 <div class="skills-container">
                     <div class="container-skill-info">
                         <div class="skill-info-item">
-                            <h1>Design + Development</h1>
-                            <p>Clean, modern designs - optimized for performance, search engines, and converting users to customers.</p>
+                            <img src="../../assets/pincel.png" alt="">
+                            <div>
+                                <h1>Design + Development</h1>
+                                <p>Clean, modern designs - optimized for performance, search engines, and converting users to customers.</p>
+                            </div>
                         </div>
                         <div class="skill-info-item">
-                            <h1>Technology</h1>
-                            <p>Combined all the latest technologies to create a progressive website.</p>
+                            <img src="../../assets/codigo.png" alt="">
+                            <div>
+                                <h1>Technology</h1>
+                                <p>Combined all the latest technologies to create a progressive website.</p>
+                            </div>
+                            
                         </div>
                         <div class="skill-info-item">
-                            <h1>Always Responsive</h1>
-                            <p>A responsive design makes your website accessible to all users, regardless of their device.</p>
+                            <img src="../../assets/tablet.png" alt="">
+                            <div>
+                                <h1>Always Responsive</h1>
+                                <p>A responsive design makes your website accessible to all users, regardless of their device.</p>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="container-skill-bar" #containerSkillBar>
@@ -63,7 +74,7 @@
                             <p class="titulo animate">{{skill.titulo}}</p>
                             <div class="inner-skill animate" *ngFor="let imagen of skill.img" >
                                 <div class="contenedor-img" [style.background]="imagen.background[0]" >
-                                    <!-- <img [src]="imagen.url" alt="" class="img_skill"> -->
+                                    <img [src]="imagen.url" alt="" class="img_skill">
                                 </div>
                                 <!-- <div class="contendor-name">
                                     <p class="name_lenguage">{{imagen.name}}</p>

@@ -176,29 +176,36 @@
   }
 
   .container-skill-info{
+    
     position: absolute;
     top: 70%;
     left: 0;
     opacity: 0;
     transform: translateY(0%);
-    width: 40%;
-    padding: 20px;
+    width: 50%;
+    padding: 20px 50px 20px 20px;
+    
   }
 
   .container-skill-info .skill-info-item{
-    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
   }
+
+  
 
   .container-skill-info .skill-info-item h1{
     color: rgb(255, 255, 255);
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: 800;
   }
 
   .container-skill-info .skill-info-item p{
     color: rgb(200, 200, 200);
-    font-size: 1vw;
+    font-size: .8vw;
     margin-top: 5px;
+    line-height: 22px;
   }
 
 
@@ -227,6 +234,7 @@
     font-size: 30px;
     color: #686868;
     font-weight: 700;
+    
     /* opacity: 0; */
    }
    
@@ -254,6 +262,7 @@
     height: 50px;
     width: 100%;
     position: relative;
+    /* background-color: #191919; */
    }
 
    
@@ -284,6 +293,7 @@
     color: white;
     font-size: 16px;
     font-weight: 500;
+    text-transform: capitalize;
    }
 
 
@@ -566,20 +576,29 @@
   
   
     .container-skill-info .skill-info-item{
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-skill-info .skill-info-item img{
+      width: 70px;
+      margin-right: 0px;
+      margin-bottom: 10px;
     }
   
     .container-skill-info .skill-info-item h1{
       color: white;
       font-size: 20px;
-    
+      margin-bottom: 10px;
     }
   
     .container-skill-info .skill-info-item p{
       color: rgb(178, 178, 178);
       font-size: 16px;
       margin-top: 5px;
-      line-height: 30px;
+      line-height: 20px;
     }
   
   
@@ -641,7 +660,7 @@
      }
   
      
-     .container-skill-bar .contenedor-porcentage{
+     /* .container-skill-bar .contenedor-porcentage{
        
        display: flex;
        align-items: center;
@@ -650,12 +669,13 @@
        position: absolute;
        left: 65px;
        height: 50px;
-     }
+     } */
   
      .container-skill-bar .porcentage{
       font-weight: 900;
-      font-size: 22px;
+      font-size: 20px;
       color: #f5f5f5;
+      margin-left: 5px;
      }
   
      .container-skill-bar .spam-porcentage{
@@ -666,7 +686,7 @@
   
      .container-skill-bar .name_lenguage{
       color: white;
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 500;
      }
 

@@ -114,14 +114,14 @@ export class DataService {
                 {
                     url: "https://i.imgur.com/hKwsTJO.png",
                     porcentage: "80",
-                    background: ["#e7f2ff", "#c9d9e6"],
+                    background: ["#97bfef", "#5bb0f5"],
                     name: "mysql",
                     description: "Relational database management system. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
                 },
                 {
                     url: "https://i.imgur.com/rODMeIK.png",
                     porcentage: "80",
-                    background: ["#c8ffd4", "#b0e6ba"],
+                    background: ["#579965", "#3a7b46"],
                     name: "mongo",
                     description: "NoSQL database program. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
                 }
@@ -133,7 +133,7 @@ export class DataService {
                 {
                     url: "https://i.imgur.com/hgIDUXy.png",
                     porcentage: "90",
-                    background: ["#ffffff", "#e6e6e6"],
+                    background: ["#ff8a8a ", "#FF7677"],
                     name: "jupyter",
                     description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
                 },
