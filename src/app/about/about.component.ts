@@ -186,9 +186,9 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     this.tl.add(header_img_ani1, .1) // sube foto
     this.tl.add(header_img_ani2, .1) // sube foto
     this.tl.add(header_texto_sobre_mi, .1) // aparece texto
-    this.tl.add([header, arrow_container_flecha], .2) //header sube
-    this.tl.add([skills_section_ani_1], .2)
-    this.tl.add([skills_section_ani_2], .2)
+    this.tl.add([header, arrow_container_flecha], .3) //header sube
+    this.tl.add([skills_section_ani_1], .3)
+    this.tl.add([skills_section_ani_2], .3)
     this.tl.add([skills_section_ani_3], ">")
   
     this.containerSkillBar.forEach((container)=> {
