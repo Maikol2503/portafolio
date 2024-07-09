@@ -19,48 +19,11 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
    
   }
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-    this.checkPositionAndApplyStyle();
-  }
-
-
 
 
   getBackground(color: string): string {
     return `linear-gradient(to right, black, ${color})`;
   }
-
-
-  checkPositionAndApplyStyle() {
-    // const textoElements = this.elementRef.nativeElement.querySelectorAll('.titulo');
-    // const slider = this.elementRef.nativeElement.querySelector('.skills_container')
-    // const slider_deplazado_izquierda = Math.abs(slider.getBoundingClientRect().left)
-    
-   
-    // textoElements.forEach((element: HTMLElement, index: number) => {
-    //   const rect = element.getBoundingClientRect();
-      
-    //   if (rect.left <= 40 ) {
-    //     element.classList.add('texto-estilizado');
-    //     // element.style.position = 'fixed'
-    //     element.style.left = `${slider_deplazado_izquierda}px`;
-    //   } 
-    //   else{
-    //     element.style.left = `${slider_deplazado_izquierda + rect.left}px`;
-       
-    //   }
-    // });
-  }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -100,10 +63,10 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
   animacion_entrada_header(){
     //los estilos iniciales de la imagen lo agrego aqui porque cuando lo ponia directo
     //en el css me daba problemas el translate, me estaba agregando un segundo translate y la imagen de descolocaba
-    gsap.to(".img_header", {left: "50%", bottom:0, x: "-50%", duration: 0,opacity: 0});
-    gsap.to(".img_header", {duration:1, opacity:1});
-    gsap.from(".texto_profesion p", { position:"relative", top:"-200px"});
-    gsap.from(".texto_nombre p", { position:"relative", top:"-200px"});
+    gsap.to(".img_header", {left: "50%", bottom:0, x: "-50%", duration:0,opacity: 0});
+    gsap.to(".img_header", {duration:.5, opacity:1});
+    gsap.from(".texto_profesion p", { position:"relative", top:"-200px", duration:1, delay:.1});
+    gsap.from(".texto_nombre p", { position:"relative", top:"-200px", duration:1, delay:.1});
   }
 
 
@@ -186,22 +149,6 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // ANIMACIONES PARA PANTLLAS DE MOVILES
     mm.add("(max-width: 800px)", (context) => {
       // Crear una única línea de tiempo
@@ -210,7 +157,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
           trigger: ".cuadro_padre",
           markers: false,
           start: "top top",
-          end: "+=5000vh",
+          end: "+=4500vh",
           scrub: true,
           pin: true
       }
@@ -223,10 +170,10 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     const header_img_ani1 = gsap.to(".img_header", {left:'50%', x:"-50%",top:'0%', y:"0px", duration:.3, marginTop:'50px' });
     const header_img_ani2 = gsap.to(".img_header", {position:'relative', duration: .3, height:'300px', paddingTop:'10px', width:'300px', borderRadius:'100%', background:'black' });
     const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1,position:'relative', duration:.3});
-    const header = gsap.to(".header", {y:"-100%", duration: 1});
+    const header = gsap.to(".header", {y:"-100%", duration: 1.2});
     const arrow_container_flecha = gsap.to(".arrow-container .flecha", { duration: 1, opacity:0});
     const skills_section_ani_1 = gsap.to(".skills-section", { duration: 1, opacity:1});
-    const skills_section_ani_2 = gsap.to(".skills-section", { duration: 1,  y:'0%', top:'0%'});
+    const skills_section_ani_2 = gsap.to(".skills-section", { duration: 1.1,  y:'0%', top:'0%'});
     const skills_section_ani_3 = gsap.to(".skills-section", { duration: 3, y:'-75%', top:'0%'});
     const skills_section_ani_4 = gsap.to(".skills-section", { duration: 1,opacity:0, x:'-100%'});
     const cuadro_hijo2_ani1 = gsap.to(".cuadro_hijo2", { duration:1, x:"-100%"});
@@ -247,7 +194,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     this.containerSkillBar.forEach((container)=> {
       const innerSkills = container.nativeElement.querySelectorAll('.contenedor-porcentage');
       innerSkills.forEach((innerSkill: HTMLElement, index:number) => {
-        this.delay = .8 + index * 0.03
+        this.delay = .9 + index * 0.03
         const a = gsap.from(innerSkill, {width:0, duration:.4, delay:this.delay, opacity:0});
         this.tl.add(a, this.delay);
     });
