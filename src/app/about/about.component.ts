@@ -167,9 +167,9 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
     const header_texto_nombre = gsap.to(".header .texto_nombre p", { y: "-100%", duration: .5 , opacity:0});
     const header_texto_profesion = gsap.to(".header .texto_profesion p", { y: "-100%", duration: .5 });
     const textos_nombres = gsap.to(".texto_nombre", { y: "-100%", duration: .5 , position:'absolute'});
-    const header_img_ani1 = gsap.to(".img_header", {left:'50%', x:"-50%",top:'0%', y:"0px", duration:.1, marginTop:'50px' });
-    const header_img_ani2 = gsap.to(".img_header", {position:'relative', duration: .1, height:'300px', paddingTop:'10px', width:'300px', borderRadius:'100%', background:'black' });
-    const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1,position:'relative', duration:.1});
+    const header_img_ani1 = gsap.to(".img_header", {left:'50%', x:"-50%",top:'0%', y:"0px", duration:.2, marginTop:'50px' });
+    const header_img_ani2 = gsap.to(".img_header", {position:'relative', duration: .2, height:'300px', paddingTop:'10px', width:'300px', borderRadius:'100%', background:'black' });
+    const header_texto_sobre_mi = gsap.to(".header .texto_sobre_mi", {opacity:1,position:'relative', duration:.2});
     const header = gsap.to(".header", {y:"-100%", duration: 1});
     const arrow_container_flecha = gsap.to(".arrow-container .flecha", { duration: 1, opacity:0});
     const skills_section_ani_1 = gsap.to(".skills-section", { duration: 1, opacity:1});
