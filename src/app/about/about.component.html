@@ -30,7 +30,7 @@
                             making sure that every solution I propose is backed by what
                             latest in knowledge and innovative approaches.
                         </p>
-                        <a href="../../cv/CVMaikolGarrido.pdf" download="CVMaikolGarrido.pdf">
+                        <a  href="src/cv"download="CVMaikolGarrido.pdf">
                             <button class="btn-descargar-cv">Download CV</button>
                         </a>
                     </div>
@@ -73,9 +73,9 @@
                         <div class="skill-bar" *ngFor="let skill of skills_data">
                             <p class="titulo animate">{{skill.titulo}}</p>
                             <div class="inner-skill animate" *ngFor="let imagen of skill.img" >
-                                <div class="contenedor-img" [style.background]="imagen.background[0]" >
-                                    <!-- <img [src]="imagen.url" alt="" class="img_skill"> -->
-                                </div>
+                                <!-- <div class="contenedor-img" [style.background]="imagen.background[0]" >
+                                    <img [src]="imagen.url" alt="" class="img_skill">
+                                </div> -->
                                 <!-- <div class="contendor-name">
                                     <p class="name_lenguage">{{imagen.name}}</p>
                                 </div> -->
