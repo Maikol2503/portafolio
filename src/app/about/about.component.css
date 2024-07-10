@@ -190,7 +190,7 @@
   .container-skill-info .skill-info-item{
     display: flex;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .container-skill-info .skill-info-item img{
@@ -211,8 +211,8 @@
 
   .container-skill-info .skill-info-item p{
     color: rgb(200, 200, 200);
-    font-size: .8vw;
-    margin-top: 5px;
+    font-size: 1vw;
+    margin-top: 15px;
     line-height: 22px;
   }
 
@@ -270,7 +270,7 @@
     height: 50px;
     width: 100%;
     position: relative;
-    /* background-color: #191919; */
+    background-color: #000000;
    }
 
    
@@ -286,8 +286,12 @@
    }
 
    .container-skill-bar .porcentage{
-    font-weight: 900;
-    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    font-size: 18px;
     color: #f5f5f5;
    }
 
@@ -300,7 +304,7 @@
    .container-skill-bar .name_lenguage{
     color: white;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: capitalize;
    }
 
@@ -694,7 +698,7 @@
   
      .container-skill-bar .name_lenguage{
       color: white;
-      font-size: 12px;
+      font-size: 18px;
       font-weight: 500;
      }
 
