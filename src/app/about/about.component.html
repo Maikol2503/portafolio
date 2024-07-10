@@ -31,7 +31,7 @@
                             latest in knowledge and innovative approaches.
                         </p>
                         <a  href="assets/cvmaikolgarrido.pdf"  download="cvmaikolgarrido.pdf">
-                            <button class="btn-descargar-cv">Download CV</button>
+                            <button class="btn-descargar-cv" translate="no">Download CV</button>
                         </a>
                     </div>
                     <!-- <img  class="img_header" src="../../assets/me8.png" alt=""> -->
@@ -71,7 +71,7 @@
                     </div>
                     <div class="container-skill-bar" #containerSkillBar>
                         <div class="skill-bar" *ngFor="let skill of skills_data">
-                            <p class="titulo animate">{{skill.titulo}}</p>
+                            <p class="titulo animate" translate="no">{{skill.titulo}}</p>
                             <div class="inner-skill animate" *ngFor="let imagen of skill.img" >
                                 <!-- <div class="contenedor-img" [style.background]="imagen.background[0]" >
                                     <img [src]="imagen.url" alt="" class="img_skill">
@@ -83,7 +83,7 @@
                                     class="contenedor-porcentage" 
                                     [style.width]="imagen.porcentage+'%' " 
                                     [style.background]="'linear-gradient(to right, ' + imagen.background[0] + ' 2%, ' + imagen.background[1] + ' 60%)'">                                   <p class="name_lenguage">{{imagen.name}}</p>
-                                    <p class="porcentage" >{{imagen.porcentage}}<span class="spam-porcentage">%</span></p>
+                                    <p class="porcentage" translate="no">{{imagen.porcentage}}<span class="spam-porcentage">%</span></p>
                                 </div>
                                 <!-- <p class="skill-descripcion">
                                     {{imagen.description}}
