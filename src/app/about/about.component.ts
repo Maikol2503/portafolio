@@ -204,7 +204,7 @@ export class AboutComponent implements OnInit, AfterViewInit, OnDestroy  {
   this.tl.add( img_header_hijo2_ani2, ">");
 
   experiencia.forEach((element: gsap.TweenTarget, index: number) => {
-    this.delay = 6 + index * 0.1
+    this.delay = 6.5 + index * 0.1
       const a = gsap.to(element, {y:'0vh', duration: .7,  delay:index * 0.01}); // Retraso para que las animaciones se ejecuten de manera escalonada
       this.tl.add(a, this.delay);
     });
