@@ -161,7 +161,7 @@ export class DataService {
                 {
                     url: "https://i.imgur.com/Opw3ZsY.png",
                     porcentage: "30",
-                    background: ["#bfffd1", "#a6e6b7"],
+                    background: ["#6bbd82", "#3ea159"],
                     name: "kafka",
                     description: "Python micro web framework. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto."
                 },
